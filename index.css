@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-shadow: 0px 0px 3px #000;
+}
+
+::selection{
+    background: #3f51b5;
+}
+
+::-moz-selection{
+    background: #3f51b5;
+}
+
+html, body{
+    color: #eee;
+    font-family: Tahoma, Verdana, sans-serif;
+    width: 100vw;
+    background-color: #000f32;
+    overflow-x: hidden;
+}
+
+bg{
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center 15%;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.2;
+}
+
+#content_1, #content_2, #content_3, #content_4{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+#hero_preview, #gold_preview, #dungeon_preview, #boss_preview{
+    width: 920px;
+    height: 480px;
+    outline: 1px solid #FFF2;
+    box-shadow: 0px 0px 20px 1px #000;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#dungeon_preview img, #boss_preview img, #gold_preview img{
+    display: none;
+}
+
+.show{
+    display: block !important;
+}
+
+#dungeon_image_selector, #boss_image_selector, #gold_image_selector{
+    display: flex;
+}
+
+.dot{
+    margin: 10px 4px;
+    width: 20px;
+    height: 20px;
+    background: #111;
+    border: 1px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 1px #000;
+}
+
+.dot:hover{
+    background: #005d87!important;
+}
+
+.dot.selected{
+    background: #03A9F4;
+}
+
+area{
+    cursor: pointer;
+}
+
+.preview_text{
+    color: #EEE;
+    margin-top: 10px;
+}
+
+.preview_title{
+    color: #03A9F4;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#rule_text{
+    margin-top: 10px;
+    width: 920px;
+    font-size: 12px;
+}
