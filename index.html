@@ -98,8 +98,8 @@
                 if(e.name == hero.alt){
                     hero_name.innerText = e.name
                     hero_description.innerHTML = e.desc
-                    hero_image.src = "./images/characters/" + e.name + ".png"
-                    hero_image.alt = e.name
+                    hero_image.src = "./images/characters/" + e.name.toLowerCase() + ".png"
+                    hero_image.alt = e.name.toLowerCase()
                     hero_image.classList.remove("animate")
                     setTimeout(() => {
                         hero_image.classList.add("animate")
