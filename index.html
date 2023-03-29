@@ -4,127 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wonderers Info Stuff</title>
+    <title>Characters | Wonderers Fansite</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 </head>
 <body>
 
     <bg></bg>
 
-    <div id="content_1">
+    <div id="content">
 
-        <h1 class="preview_title">Characters</h1>
+        <div id="navbar">
 
-        <div id="hero_preview">
-
-            <img id="hero_image" src="./images/heroes/alice.jpg" alt="alice" usemap="#heromap">
-
-            <map name="heromap">
-                <area onclick="change_hero('gretel')" shape="rect" coords="20,365,70,480" alt="Gretel">
-                <!--<area onclick="change_hero('catsith')" shape="rect" coords="70,365,120,480" alt="Catsith">-->
-                <area onclick="change_hero('alibaba')" shape="rect" coords="120,365,170,480" alt="Alibaba">
-                <area onclick="change_hero('robin')" shape="rect" coords="170,365,220,480" alt="Robin">
-                <area onclick="change_hero('oz')" shape="rect" coords="120,365,270,480" alt="Oz">
-                <area onclick="change_hero('alice')" shape="rect" coords="270,365,320,480" alt="Alice">
-                <area onclick="change_hero('scarlet')" shape="rect" coords="320,365,370,480" alt="Scarlet">
-                <area onclick="change_hero('snow')" shape="rect" coords="370,365,420,480" alt="Snow">
-            </map>
+            <div class="button"><p>Characters</p></div>
 
         </div>
 
-        <p class="preview_text">(Click on fairytale hero to change)</p>
-
-        <div id="rule_text">
-            <p class="preview_text">Possible release characters:</p>
-            <p class="preview_text">Gretel</p>
-            <p class="preview_text">Catsith</p>
-            <p class="preview_text">Alibaba</p>
-            <p class="preview_text">Robin</p>
-            <p class="preview_text">Oz</p>
-            <p class="preview_text">Alice</p>
-            <p class="preview_text">Scarlet (Red Riding Hood)</p>
-            <p class="preview_text">Snow</p>
-            <p class="preview_text">Odile</p>
-            <p class="preview_text">Nutcracker</p>
+        <div id="hero">
+            <img id="hero_image" src="" alt="">
         </div>
 
-    </div>
+        <div id="bottom">
 
-    <div id="content_2">
+            <div id="description">
+                <div id="hero_name"></div>
+                <div id="hero_description"></div>
+            </div>
+    
+            <div id="hero_select">
+                <img onclick="select_hero(this)" class="hero" src="./images/characters/alibaba_small.png" alt="Alibaba">
+                <img onclick="select_hero(this)" class="hero hero_selected" src="./images/characters/alice_small.png" alt="Alice">
+                <img onclick="select_hero(this)" class="hero" src="./images/characters/odile_small.png" alt="Odile">
+                <img onclick="select_hero(this)" class="hero" src="./images/characters/robin_small.png" alt="Robin">
+                <img onclick="select_hero(this)" class="hero" src="./images/characters/scarlet_small.png" alt="Scarlet">
+                <img onclick="select_hero(this)" class="hero" src="./images/characters/snow_small.png" alt="Snow">
+            </div>
 
-        <h1 class="preview_title">Gold Clash</h1>
-
-        <div id="gold_preview">
-
-            <img class="gold_image show" src="./images/gold1.jpg" alt="gold_clash">
-            <img class="gold_image" src="./images/gold2.jpg" alt="gold_clash">
-            <img class="gold_image" src="./images/gold3.jpg" alt="gold_clash">
-
-        </div>
-
-        <div data-name="gold" id="gold_image_selector"></div>
-
-        <div id="rule_text">
-            <p class="preview_text"><b>NOTE: Numbers and mechanics may have changed!</b></p>
-            <p class="preview_text">Gather 9999 gold to win.</p>
-            <p class="preview_text">Player with most gold has a crown above his/her head (and on minimap) and will have it's movement slowed.</p>
-            <p class="preview_text">Dying will remove gold (-35%) from the player.</p>
-            <p class="preview_text">A kill grants gold (+500).</p>
-            <p class="preview_text">Treasure chest monster in the middle of the map that drops gold when attacked.</p>
-            <p class="preview_text">Every 1 minute, player will receieve a gold interest (+15%).</p>
-            <p class="preview_text">Every 2 minute, part of the map will fall.</p>
-            <p class="preview_text">The shop will let the player buy artifacts to boost stats during the game.</p>
-            <p class="preview_text">Everyime you level up, you will be able to select 1 of 3 random passive abilities.</p>
-        </div>
-
-    </div>
-
-    <div id="content_3">
-
-        <h1 class="preview_title">Glitch Dungeon</h1>
-
-        <div id="dungeon_preview">
-
-            <img class="dungeon_image show" src="./images/dungeon1.jpg" alt="glitch_dungeon">
-            <img class="dungeon_image" src="./images/dungeon2.jpg" alt="glitch_dungeon">
-            <img class="dungeon_image" src="./images/dungeon3.jpg" alt="glitch_dungeon">
-            <img class="dungeon_image" src="./images/dungeon4.jpg" alt="glitch_dungeon">
-            <img class="dungeon_image" src="./images/dungeon5.jpg" alt="glitch_dungeon">
-
-        </div>
-
-        <div data-name="dungeon" id="dungeon_image_selector"></div>
-
-        <div id="rule_text">
-            <p class="preview_text"><b>NOTE: Numbers and mechanics may have changed!</b></p>
-            <p class="preview_text">The rogue-like dungeons contains puzzle, bosses, items, store/upgrade NPC and more.</p>
-            <p class="preview_text">Player may be able to select pet at start that gives a passive buff.</p>
-            <p class="preview_text">Player can select weapons that changes the active weapon skill.</p>
-        </div>
-
-    </div>
-
-    <div id="content_4">
-
-        <h1 class="preview_title">Boss Raid</h1>
-
-        <div id="boss_preview">
-
-            <img class="boss_image show" src="./images/raid1.jpg" alt="boss_raid">
-            <img class="boss_image" src="./images/raid2.jpg" alt="boss_raid">
-            <img class="boss_image" src="./images/raid3.jpg" alt="boss_raid">
-
-        </div>
-
-        <div data-name="boss" id="boss_image_selector"></div>
-
-        <div id="rule_text">
-            <p class="preview_text"><b>NOTE: Numbers and mechanics may have changed!</b></p>
-            <p class="preview_text">You will get 5 random abilities and select which to re-roll with a total of 5 re-rolls.</p>
-            <p class="preview_text">5 different weapons is available to select. They have different elements and skills.</p>
-            <p class="preview_text">There is a time limit on the boss raid. (Black Alice seems to be 07:30)</p>
-            <p class="preview_text">There will be a damage ranking showing all players damage on the boss.</p>
-            <p class="preview_text">If you die, you will be spectating the fight from a high angle shot.</p>
         </div>
 
     </div>
@@ -132,51 +47,69 @@
     <script>
 
         let hero_image = document.getElementById("hero_image")
+        let hero_name = document.getElementById("hero_name")
+        let hero_description = document.getElementById("hero_description")
 
-        function change_hero(hero){
-
-            hero_image.src = "./images/heroes/" + hero + ".jpg"
-            hero_image.alt = hero
-        }
-
-        function setup_image_selector(obj){
-
-            let preview_images = document.getElementById(obj + "_preview")
-            let sel = document.getElementById(obj + "_image_selector")
-
-            for (let i=0; i < preview_images.childElementCount; i++){
-                if(i == 0){
-                    sel.innerHTML += '<div data-id=' + i + ' onclick="select_image(this)" class="dot selected"></div>'
-                }else{
-                    sel.innerHTML += '<div data-id=' + i + ' onclick="select_image(this)" class="dot"></div>'
-                }
-
+        let hero_list = [
+            {
+                "name": "Scarlet",
+                "desc": "Heh... The chains of destiny are calling me."
+            },
+            {
+                "name": "Snow",
+                "desc": "May peace be with us all."
+            },
+            {
+                "name": "Alice",
+                "desc": "Two-handed swords, more two-handed swords!<br>I can hear them calling my name!"
+            },
+            {
+                "name": "Robin",
+                "desc": "I'll shoot down all the misfortune in the world with this bow."
+            },
+            {
+                "name": "Alibaba",
+                "desc": "Heheh, another sucker- I mean, a lovely customer!<br>What are you looking for today?"
+            },
+            {
+                "name": "Gretel",
+                "desc": "Look how beautiful I am.<br>Why won't you love me?"
+            },
+            {
+                "name": "Oz",
+                "desc": "I shall save this world."
+            },
+            {
+                "name": "Odile",
+                "desc": ""
             }
+        ]
+
+        function select_hero(hero){
+
+            document.querySelectorAll(".hero").forEach(function(el){
+                el.classList.remove("hero_selected")
+            })
+            hero.classList.add("hero_selected")
+
+            hero_name.innerText = hero.alt
+
+            hero_list.forEach(function(e){
+                if(e.name == hero.alt){
+                    hero_name.innerText = e.name
+                    hero_description.innerHTML = e.desc
+                    hero_image.src = "./images/characters/" + e.name + ".png"
+                    hero_image.alt = e.name
+                    hero_image.classList.remove("animate")
+                    setTimeout(() => {
+                        hero_image.classList.add("animate")
+                    }, 1);
+                }
+            })
 
         }
 
-        function select_image(img){
-
-            let parent = img.parentElement.dataset.name
-            let preview_images = document.getElementById(parent + "_preview")
-
-            document.querySelectorAll("#" + parent + "_image_selector .dot").forEach(function(el){
-                    el.classList.remove("selected")
-            })
-
-            img.classList.add("selected")
-
-            document.querySelectorAll("." + parent + "_image").forEach(function(el){
-                    el.classList.remove("show")
-            })
-
-            preview_images.children[img.dataset.id].classList.add("show")
-
-        }
-
-        setup_image_selector("gold")
-        setup_image_selector("dungeon")
-        setup_image_selector("boss")
+        select_hero(document.getElementsByClassName("hero_selected")[0]) // Alice
 
     </script>
     
