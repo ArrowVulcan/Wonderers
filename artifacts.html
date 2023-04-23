@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artifacts | Wonderers Fansite</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/artifacts.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+    <bg></bg>
+
+    <div id="open-btn">
+        <img onclick="open_menu('side-menu', true)" src="./images/open.png" alt="open">
+    </div>
+
+    <div id="side-menu">
+
+        <div class="side-menu-plane"></div>
+
+        <div onclick="close_menu('side-menu')" id="close-btn">
+            <img src="./images/close.png" alt="close">
+        </div>
+
+        <img src="./images/menu_image.jpg" alt="menu_image">
+
+        <div class="menu-divider"></div>
+
+        <div id="menu-list">
+
+            <a href="./buffs.html">
+                <div id="hero" class="menu-buttons">
+                    <img src="./images/hero.png" alt="hero">
+                    <p>Hero</p>
+                </div>
+            </a>
+
+            <a href="./artifacts.html">
+                <div id="artifact" class="menu-buttons">
+                    <img src="./images/artifact.png" alt="artifact">
+                    <p>Artifact</p>
+                </div>
+            </a>
+
+            <!--
+            <a href="./pets.html">
+                <div id="pet" class="menu-buttons">
+                    <img src="./images/pet.png" alt="pet">
+                    <p>Pet</p>
+                </div>
+            </a>
+            -->
+
+        </div>
+
+    </div>
+    
+    <div id="artifact-menu">
+
+        <div id="artifact-list">
+
+            <p class="artifact-location">Chapter 1: Hunters' Forest</p>
+
+            <div class="artifact">
+
+                <div class="artifact-image">
+                    <img src="" onerror="this.onerror=null; this.src='./images/artifacts/multimillionaire.png'" alt="multimillionaire">
+                    <span class="artifact-image-slots">♦ ♦</span>
+                </div>
+
+                <div class="artifact-row">
+                    
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/landscape_rock.jpg'" alt="">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/landscape_rock.jpg'" alt="">
+
+                            <p class="artifact-title">Landscape Rock</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Fortune and Luck</p>
+                            </div>
+
+                            <div class="artifact-info-stats no-space">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/fortune_and_luck.png" alt="fortune_and_luck">
+                                <p>when <span class="condition">acquiring Gold</span>, <span class="type">Defense</span> <span class="amount">+1</span> for 3 sec (max <span class="amount">30</span> stacks)</p>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Multimillionaire</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/multimillionaire.png" alt="multimillionaire">
+                                <p><span class="type">Gold Acquisition Range</span> <span class="amount">+100</span>.</p>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/alpha_male_handbag.jpg'" alt="">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/alpha_male_handbag.jpg'" alt="">
+
+                            <p class="artifact-title">Alpha Male Handbag</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Gold and Composure</p>
+                            </div>
+
+                            <div class="artifact-info-stats no-space">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/fortune_and_luck.png" alt="fortune_and_luck">
+                                <p>when <span class="condition">acquiring Gold</span>, <span class="type">Speed</span> <span class="amount">+10%</span> for 1 sec.</p>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Multimillionaire</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/multimillionaire.png" alt="multimillionaire">
+                                <p><span class="type">Gold Acquisition Range</span> <span class="amount">+100</span>.</p>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/yellow_mouse_coin_bank.jpg'" alt="">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/yellow_mouse_coin_bank.jpg'" alt="">
+
+                            <p class="artifact-title">Yellow Mouse Coin Bank</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Clink</p>
+                            </div>
+
+                            <div class="artifact-info-stats no-space">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/fortune_and_luck.png" alt="fortune_and_luck">
+                                <p>when <span class="condition">acquiring Gold</span>, recovers <span class="type">HP</span> by <span class="amount">1</span>.</p>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Multimillionaire</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/multimillionaire.png" alt="multimillionaire">
+                                <p><span class="type">Gold Acquisition Range</span> <span class="amount">+100</span>.</p>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/angel_coin.jpg'" alt="">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/angel_coin.jpg'" alt="">
+
+                            <p class="artifact-title">Angel Coin</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Ability Detail</p>
+                            </div>
+
+                            <div class="artifact-info-stats">
+                                <p>HP</p>
+                                <p>10%</p>
+                            </div>
+
+                            <div class="artifact-info-stats">
+                                <p>Gold Acquisition Range</p>
+                                <p>5</p>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Multimillionaire</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/multimillionaire.png" alt="multimillionaire">
+                                <p><span class="type">Gold Acquisition Range</span> <span class="amount">+100</span>.</p>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="artifact">
+
+                <div class="artifact-image">
+                    <img src="" onerror="this.onerror=null; this.src='./images/artifacts/hunger_for_blood.png'" alt="hunger_for_blood.png">
+                    <span class="artifact-image-slots">♦ ♦ ♦</span>
+                </div>
+
+                <div class="artifact-row">
+                    
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/rune_of_power.jpg'" alt="rune_of_power">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/rune_of_power.jpg'" alt="rune_of_power">
+
+                            <p class="artifact-title">Rune of Power</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Ability Detail</p>
+                            </div>
+
+                            <div class="artifact-info-stats">
+                                <p>Attack</p>
+                                <p>20%</p>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Hunger for Blood</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/hunger_for_blood.png" alt="hunger_for_blood">
+                                <p>Upon defeating an enemy, <span class="type">Attack</span> <span class="percent">+5%</span> for 120 sec (max <span class="amount">10</span> stacks)</p>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/sharp_blade.jpg'" alt="sharp_blade">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/sharp_blade.jpg'" alt="sharp_blade">
+
+                            <p class="artifact-title">Sharp Blade</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Ability Detail</p>
+                            </div>
+
+                            <div class="artifact-info-stats">
+                                <p>Critical Chance</p>
+                                <p>-3%</p>
+                            </div>
+
+                            <div class="artifact-info-stats">
+                                <p>Critical Damage</p>
+                                <p>50%</p>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Hunger for Blood</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/hunger_for_blood.png" alt="hunger_for_blood">
+                                <p>Upon defeating an enemy, <span class="type">Attack</span> <span class="percent">+5%</span> for 120 sec (max <span class="amount">10</span> stacks)</p>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/broken_beast_claw.jpg'" alt="broken_beast_claw">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/broken_beast_claw.jpg'" alt="broken_beast_claw">
+
+                            <p class="artifact-title">Broken Beast Claw</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Sharp Claws</p>
+                            </div>
+
+                            <div class="artifact-info-stats no-space">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/sharp_claws.png" alt="sharp_claws">
+                                <p><span class="type">Basic Attack Damage</span> <span class="percent">+25%</span></p>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Hunger for Blood</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/hunger_for_blood.png" alt="hunger_for_blood">
+                                <p>Upon defeating an enemy, <span class="type">Attack</span> <span class="percent">+5%</span> for 120 sec (max <span class="amount">10</span> stacks)</p>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/red_dagger.jpg'" alt="red_dagger">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/red_dagger.jpg'" alt="red_dagger">
+
+                            <p class="artifact-title">Red Dagger</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Blood Absorption</p>
+                            </div>
+
+                            <div class="artifact-info-stats no-space">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/blood_absorption.png" alt="blood_absorption">
+                                <p>When a <span class="type">basic attack</span> hits, recover <span class="type">HP</span> by <span class="amount">1</span>.</p>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Hunger for Blood</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/hunger_for_blood.png" alt="hunger_for_blood">
+                                <p>Upon defeating an enemy, <span class="type">Attack</span> <span class="percent">+5%</span> for 120 sec (max <span class="amount">10</span> stacks)</p>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/blessed_red_holy_water.jpg'" alt="blessed_red_holy_water">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/blessed_red_holy_water.jpg'" alt="blessed_red_holy_water">
+
+                            <p class="artifact-title">Blessed Red Holy Water</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Ability Detail</p>
+                            </div>
+
+                            <div class="artifact-info-stats">
+                                <p>Attack Speed</p>
+                                <p>3%</p>
+                            </div>
+
+                            <div class="artifact-info-stats">
+                                <p>Critical Damage</p>
+                                <p>15%</p>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Hunger for Blood</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/hunger_for_blood.png" alt="hunger_for_blood">
+                                <p>Upon defeating an enemy, <span class="type">Attack</span> <span class="percent">+5%</span> for 120 sec (max <span class="amount">10</span> stacks)</p>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="artifact">
+
+                <div class="artifact-image">
+                    <img src="" onerror="this.onerror=null; this.src='./images/artifacts/black_flame_dragon.png'" alt="black_flame_dragon">
+                    <span class="artifact-image-slots">♦ ♦ ♦</span>
+                </div>
+
+                <div class="artifact-row">
+                    
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/cotton_gloves.jpg'" alt="cotton_gloves">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/cotton_gloves.jpg'" alt="cotton_gloves">
+
+                            <p class="artifact-title">Cotton Gloves</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Ability Detail</p>
+                            </div>
+
+                            <div class="artifact-info-stats">
+                                <p>Attack Speed</p>
+                                <p>3%</p>
+                            </div>
+
+                            <div class="artifact-info-stats">
+                                <p>HP</p>
+                                <p>10</p>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Black Flame Dragon</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/black_flame_dragon.png" alt="black_flame_dragon">
+                                <div>
+                                    <p><span class="amount">SP +1 slot</span></p>
+                                    <p>Upon Evasion, create a <span class="skill">Gravity Field</span> that pulls in nearby enemies (Cooldown <span class="duration">10 sec</span>)</p>
+                                </div>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/black_belt.jpg'" alt="black_belt">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/black_belt.jpg'" alt="black_belt">
+
+                            <p class="artifact-title">Black Belt</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Hard Training</p>
+                            </div>
+
+                            <div class="artifact-info-stats no-space">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/hard_training.png" alt="hard_training">
+                                <p><span class="condition">When attacked</span>, <span class="type">Defense</span> <span class="percent">+5%</span> for 2 sec (max 5 stacks)</p>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Black Flame Dragon</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/black_flame_dragon.png" alt="black_flame_dragon">
+                                <div>
+                                    <p><span class="amount">SP +1 slot</span></p>
+                                    <p>Upon Evasion, create a <span class="skill">Gravity Field</span> that pulls in nearby enemies (Cooldown <span class="duration">10 sec</span>)</p>
+                                </div>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/sturdy_armor.jpg'" alt="sturdy_armor">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/sturdy_armor.jpg'" alt="sturdy_armor">
+
+                            <p class="artifact-title">Sturdy Armor</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Ability Detail</p>
+                            </div>
+
+                            <div class="artifact-info-stats">
+                                <p>Defense</p>
+                                <p>30</p>
+                            </div>
+
+                            <div class="artifact-info-stats">
+                                <p>Speed</p>
+                                <p>-5%</p>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Black Flame Dragon</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/black_flame_dragon.png" alt="black_flame_dragon">
+                                <div>
+                                    <p><span class="amount">SP +1 slot</span></p>
+                                    <p>Upon Evasion, create a <span class="skill">Gravity Field</span> that pulls in nearby enemies (Cooldown <span class="duration">10 sec</span>)</p>
+                                </div>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/ring_of_keen_intelligence.jpg'" alt="ring_of_keen_intelligence">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/ring_of_keen_intelligence.jpg'" alt="ring_of_keen_intelligence">
+
+                            <p class="artifact-title">Ring of Keen Intelligence</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Intelligence</p>
+                            </div>
+
+                            <div class="artifact-info-stats no-space">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/intelligence.png" alt="intelligence">
+                                <p>Increases <span class="type">Attack</span> for <span class="duration">5 sec</span> every <span class="duration">5 sec</span> (<span class="percent">1%</span> of <span class="type">Max HP</span>)</p>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Black Flame Dragon</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/black_flame_dragon.png" alt="black_flame_dragon">
+                                <div>
+                                    <p><span class="amount">SP +1 slot</span></p>
+                                    <p>Upon Evasion, create a <span class="skill">Gravity Field</span> that pulls in nearby enemies (Cooldown <span class="duration">10 sec</span>)</p>
+                                </div>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/ghost_boots.jpg'" alt="ghost_boots">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/ghost_boots.jpg'" alt="ghost_boots">
+
+                            <p class="artifact-title">Ghost Boots</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Ability Detail</p>
+                            </div>
+
+                            <div class="artifact-info-stats">
+                                <p>HP</p>
+                                <p>12%</p>
+                            </div>
+
+                            <div class="artifact-info-stats">
+                                <p>Speed</p>
+                                <p>2%</p>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Black Flame Dragon</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/black_flame_dragon.png" alt="black_flame_dragon">
+                                <div>
+                                    <p><span class="amount">SP +1 slot</span></p>
+                                    <p>Upon Evasion, create a <span class="skill">Gravity Field</span> that pulls in nearby enemies (Cooldown <span class="duration">10 sec</span>)</p>
+                                </div>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="artifact">
+
+                <div class="artifact-image">
+                    <img src="" onerror="this.onerror=null; this.src='./images/artifacts/baby_phoenix.png'" alt="baby_phoenix">
+                    <span class="artifact-image-slots">♦ ♦ ♦</span>
+                </div>
+
+                <div class="artifact-row">
+
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/phoenix_feather.jpg'" alt="phoenix_feather">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/phoenix_feather.jpg'" alt="phoenix_feather">
+    
+                            <p class="artifact-title">Phoenix Feather</p>
+    
+                            <div class="artifact-detail-bar">
+                                <p>Ability Detail</p>
+                            </div>
+    
+                            <div class="artifact-info-stats">
+                                <p>Attack Speed</p>
+                                <p>3%</p>
+                            </div>
+
+                            <div class="artifact-info-stats">
+                                <p>Speed</p>
+                                <p>3%</p>
+                            </div>
+    
+                            <div class="artifact-detail-bar">
+                                <p>Baby Phoenix</p>
+                            </div>
+    
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/baby_phoenix.png" alt="baby_phoenix">
+                                <div>
+                                    <p>Deals <span class="effect">Fire</span> Element damage to nearby enemies (<span class="percent">200%</span> of <span class="type">Attack</span>, applied 1 time every <span class="duration">10 sec</span>)</p>
+                                </div>
+                            </div>
+    
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+    
+                        </div>
+    
+                    </div>
+
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/flame_orb.jpg'" alt="flame_orb">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/flame_orb.jpg'" alt="flame_orb">
+    
+                            <p class="artifact-title">Flame Orb</p>
+    
+                            <div class="artifact-detail-bar">
+                                <p>Flame Orb</p>
+                            </div>
+    
+                            <div class="artifact-info-stats no-space">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/sharp_claws.png" alt="sharp_claws">
+                                <div>
+                                    <p>Increases <span class="type">Critical Hit Chance</span> by <span class="percent">2%</span></p>
+                                    <p>Upon <span class="condition">taking damage</span>, increase <span class="type">Attack</span> by <span class="percent">10%</span> for 2 sec.</p>
+                                </div>
+                            </div>
+    
+                            <div class="artifact-detail-bar">
+                                <p>Baby Phoenix</p>
+                            </div>
+    
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/baby_phoenix.png" alt="baby_phoenix">
+                                <div>
+                                    <p>Deals <span class="effect">Fire</span> Element damage to nearby enemies (<span class="percent">200%</span> of <span class="type">Attack</span>, applied 1 time every <span class="duration">10 sec</span>)</p>
+                                </div>
+                            </div>
+    
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+    
+                        </div>
+    
+                    </div>
+
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/plant_of_life.jpg'" alt="plant_of_life">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/plant_of_life.jpg'" alt="plant_of_life">
+
+                            <p class="artifact-title">Plant of Life</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Ability Detail</p>
+                            </div>
+
+                            <div class="artifact-info-stats">
+                                <p>HP</p>
+                                <p>20%</p>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Baby Phoenix</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/baby_phoenix.png" alt="baby_phoenix">
+                                <div>
+                                    <p>Deals <span class="effect">Fire</span> Element damage to nearby enemies (<span class="percent">200%</span> of <span class="type">Attack</span>, applied 1 time every <span class="duration">10 sec</span>)</p>
+                                </div>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/fire_dragons_bandolier.jpg'" alt="fire_dragons_bandolier">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/fire_dragons_bandolier.jpg'" alt="fire_dragons_bandolier">
+
+                            <p class="artifact-title">Fire Dragon's Bandolier</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Fire Dragon's Blessing</p>
+                            </div>
+
+                            <div class="artifact-info-stats no-space">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/fire_dragons_blessing.png" alt="fire_dragons_blessing">
+                                <p>Upon hitting with <span class="type">basic attack</span>, deals <span class="effect">Fire</span> Element damage (<span class="percent">20%</span> of <span class="type">Defense</span>)</p>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Baby Phoenix</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/baby_phoenix.png" alt="baby_phoenix">
+                                <div>
+                                    <p>Deals <span class="effect">Fire</span> Element damage to nearby enemies (<span class="percent">200%</span> of <span class="type">Attack</span>, applied 1 time every <span class="duration">10 sec</span>)</p>
+                                </div>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/mysterious_stone.jpg'" alt="mysterious_stone">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/mysterious_stone.jpg'" alt="mysterious_stone">
+
+                            <p class="artifact-title">Mysetrious Stone</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Strange Power</p>
+                            </div>
+
+                            <div class="artifact-info-stats no-space">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/hard_training.png" alt="hard_training">
+                                <p>When <span class="condition">Attacked</span>, <span class="type">recovers HP</span> every 1 sec for <span class="duration">3 sec</span> (<span class="percent">2%</span> of <span class="type">Max HP</span>)</p>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Baby Phoenix</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/baby_phoenix.png" alt="baby_phoenix">
+                                <div>
+                                    <p>Deals <span class="effect">Fire</span> Element damage to nearby enemies (<span class="percent">200%</span> of <span class="type">Attack</span>, applied 1 time every <span class="duration">10 sec</span>)</p>
+                                </div>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="artifact">
+
+                <div class="artifact-image">
+                    <img src="" onerror="this.onerror=null; this.src='./images/artifacts/adventurer.png'" alt="adventurer">
+                    <span class="artifact-image-slots">♦ ♦ ♦</span>
+                </div>
+
+                <div class="artifact-row">
+                    
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/ordinary_steel_sword.jpg'" alt="ordinary_steel_sword">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/ordinary_steel_sword.jpg'" alt="ordinary_steel_sword">
+
+                            <p class="artifact-title">Small Clockwork</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Ability Detail</p>
+                            </div>
+
+                            <div class="artifact-info-stats">
+                                <p>Attack</p>
+                                <p>15%</p>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Adventurer</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/adventurer.png" alt="adventurer">
+                                <div>
+                                    <p><span class="type">Recovers HP</span> (by <span class="amount">2</span>, applied 1 time per sec)</p>
+                                </div>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/nail_bat.jpg'" alt="nail_bat">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/nail_bat.jpg'" alt="nail_bat">
+
+                            <p class="artifact-title">Nail Bat</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Ability Detail</p>
+                            </div>
+
+                            <div class="artifact-info-stats">
+                                <p>Critical Chance</p>
+                                <p>3%</p>
+                            </div>
+
+                            <div class="artifact-info-stats">
+                                <p>Critical Damage</p>
+                                <p>15%</p>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Adventurer</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/adventurer.png" alt="adventurer">
+                                <div>
+                                    <p><span class="type">Recovers HP</span> (by <span class="amount">2</span>, applied 1 time per sec)</p>
+                                </div>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/thief_gloves.jpg'" alt="thief_gloves">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/thief_gloves.jpg'" alt="thief_gloves">
+
+                            <p class="artifact-title">Thief Gloves</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Ability Detail</p>
+                            </div>
+
+                            <div class="artifact-info-stats">
+                                <p>Attack Speed</p>
+                                <p>3%</p>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Adventurer</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/adventurer.png" alt="adventurer">
+                                <div>
+                                    <p><span class="type">Recovers HP</span> (by <span class="amount">2</span>, applied 1 time per sec)</p>
+                                </div>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="artifact">
+
+                <div class="artifact-image">
+                    <img src="" onerror="this.onerror=null; this.src='./images/artifacts/explorer.png'" alt="explorer">
+                    <span class="artifact-image-slots">♦ ♦ ♦</span>
+                </div>
+
+                <div class="artifact-row">
+                    
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/small_clockwork.jpg'" alt="small_clockwork">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/small_clockwork.jpg'" alt="small_clockwork">
+
+                            <p class="artifact-title">Small Clockwork</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Ability Detail</p>
+                            </div>
+
+                            <div class="artifact-info-stats">
+                                <p>Cooldown Reduction</p>
+                                <p>2%</p>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Explorer</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/explorer.png" alt="explorer">
+                                <div>
+                                    <p><span class="amount">SP +1 slot</span></p>
+                                </div>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/dragon_egg.jpg'" alt="dragon_egg">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/black_belt.jpg'" alt="black_belt">
+
+                            <p class="artifact-title">Dragon Egg</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Ability Detail</p>
+                            </div>
+
+                            <div class="artifact-info-stats">
+                                <p>HP</p>
+                                <p>15%</p>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Explorer</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/explorer.png" alt="explorer">
+                                <div>
+                                    <p><span class="amount">SP +1 slot</span></p>
+                                </div>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/light_boots.jpg'" alt="light_boots">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/light_boots.jpg'" alt="light_boots">
+
+                            <p class="artifact-title">Light Boots</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Ability Detail</p>
+                            </div>
+
+                            <div class="artifact-info-stats">
+                                <p>Speed</p>
+                                <p>3%</p>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Explorer</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/explorer.png" alt="explorer">
+                                <div>
+                                    <p><span class="amount">SP +1 slot</span></p>
+                                </div>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p class="artifact-location">Chapter 2: Frozen Castle</p>
+
+        </div>
+    
+    </div>
+
+    <script>
+
+        function close_artifact_info(e, self){
+            e.stopPropagation()
+            self.parentElement.style.display = "none"
+        }
+
+        function open_artifact_info(e){
+
+            document.querySelectorAll(".artifact-wrapper").forEach(function(e){
+                e.style.display = "none"
+            })
+
+            e.children["artifact-info-wrapper"].style.display = "flex"
+        }
+
+    </script>
+
+    <script src="./scripts/index.js"></script>
+
+</body>
+</html>

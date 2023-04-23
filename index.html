@@ -4,114 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Characters | Wonderers Fansite</title>
-    <link rel="stylesheet" href="./index.css">
+    <title>Home | Wonderers Fansite</title>
+    <link rel="stylesheet" href="./styles/index.css">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 </head>
 <body>
 
     <bg></bg>
 
-    <div id="content">
+    <div id="open-btn">
+        <img onclick="open_menu('side-menu', true)" src="./images/open.png" alt="open">
+    </div>
 
-        <div id="navbar">
+    <div id="side-menu">
 
-            <div class="button"><p>Characters</p></div>
+        <div class="side-menu-plane"></div>
 
+        <div onclick="close_menu('side-menu')" id="close-btn">
+            <img src="./images/close.png" alt="close">
         </div>
 
-        <div id="hero">
-            <img id="hero_image" src="" alt="">
-        </div>
+        <img src="./images/menu_image.jpg" alt="menu_image">
 
-        <div id="bottom">
+        <div class="menu-divider"></div>
 
-            <div id="description">
-                <div id="hero_name"></div>
-                <div id="hero_description"></div>
-            </div>
-    
-            <div id="hero_select">
-                <img onclick="select_hero(this)" class="hero" src="./images/characters/alibaba_small.png" alt="Alibaba">
-                <img onclick="select_hero(this)" class="hero hero_selected" src="./images/characters/alice_small.png" alt="Alice">
-                <img onclick="select_hero(this)" class="hero" src="./images/characters/odile_small.png" alt="Odile">
-                <img onclick="select_hero(this)" class="hero" src="./images/characters/robin_small.png" alt="Robin">
-                <img onclick="select_hero(this)" class="hero" src="./images/characters/scarlet_small.png" alt="Scarlet">
-                <img onclick="select_hero(this)" class="hero" src="./images/characters/snow_small.png" alt="Snow">
-            </div>
+        <div id="menu-list">
+
+            <a href="./buffs.html">
+                <div id="hero" class="menu-buttons">
+                    <img src="./images/hero.png" alt="hero">
+                    <p>Hero</p>
+                </div>
+            </a>
+
+            <a href="./artifacts.html">
+                <div id="artifact" class="menu-buttons">
+                    <img src="./images/artifact.png" alt="artifact">
+                    <p>Artifact</p>
+                </div>
+            </a>
+
+            <!--
+            <a href="./pets.html">
+                <div id="pet" class="menu-buttons">
+                    <img src="./images/pet.png" alt="pet">
+                    <p>Pet</p>
+                </div>
+            </a>
+            -->
 
         </div>
 
     </div>
 
+    <div id="home-arrow">
+        <img src="./images/arrow.png" alt="arrow">
+    </div>
+
+    <div id="home">
+
+        <img src="./images/logo.png" alt="logo">
+
+    </div>
+
     <script>
 
-        let hero_image = document.getElementById("hero_image")
-        let hero_name = document.getElementById("hero_name")
-        let hero_description = document.getElementById("hero_description")
-
-        let hero_list = [
-            {
-                "name": "Scarlet",
-                "desc": "Heh... The chains of destiny are calling me."
-            },
-            {
-                "name": "Snow",
-                "desc": "May peace be with us all."
-            },
-            {
-                "name": "Alice",
-                "desc": "Two-handed swords, more two-handed swords!<br>I can hear them calling my name!"
-            },
-            {
-                "name": "Robin",
-                "desc": "I'll shoot down all the misfortune in the world with this bow."
-            },
-            {
-                "name": "Alibaba",
-                "desc": "Heheh, another sucker- I mean, a lovely customer!<br>What are you looking for today?"
-            },
-            {
-                "name": "Gretel",
-                "desc": "Look how beautiful I am.<br>Why won't you love me?"
-            },
-            {
-                "name": "Oz",
-                "desc": "I shall save this world."
-            },
-            {
-                "name": "Odile",
-                "desc": ""
-            }
-        ]
-
-        function select_hero(hero){
-
-            document.querySelectorAll(".hero").forEach(function(el){
-                el.classList.remove("hero_selected")
-            })
-            hero.classList.add("hero_selected")
-
-            hero_name.innerText = hero.alt
-
-            hero_list.forEach(function(e){
-                if(e.name == hero.alt){
-                    hero_name.innerText = e.name
-                    hero_description.innerHTML = e.desc
-                    hero_image.src = "./images/characters/" + e.name.toLowerCase() + ".png"
-                    hero_image.alt = e.name.toLowerCase()
-                    hero_image.classList.remove("animate")
-                    setTimeout(() => {
-                        hero_image.classList.add("animate")
-                    }, 1);
-                }
-            })
-
+        function close_artifact_info(e, self){
+            e.stopPropagation()
+            self.parentElement.style.display = "none"
         }
 
-        select_hero(document.getElementsByClassName("hero_selected")[0]) // Alice
+        function open_artifact_info(e){
+
+            document.querySelectorAll(".artifact-wrapper").forEach(function(e){
+                e.style.display = "none"
+            })
+
+            e.children["artifact-info-wrapper"].style.display = "flex"
+        }
 
     </script>
-    
+
+    <script src="./scripts/index.js"></script>
+
 </body>
 </html>

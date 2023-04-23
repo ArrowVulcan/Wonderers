@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets | Wonderers Fansite</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/pets.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+    <bg></bg>
+
+    <div id="open-btn">
+        <img onclick="open_menu('side-menu', true)" src="./images/open.png" alt="open">
+    </div>
+
+    <div id="side-menu">
+
+        <div onclick="close_menu('side-menu')" id="close-btn">
+            <img src="./images/close.png" alt="close">
+        </div>
+
+        <div id="menu-list">
+
+            <a href="./buffs.html">
+                <div id="hero" class="menu-buttons">
+                    <img src="./images/hero.png" alt="hero">
+                    <p>Hero</p>
+                </div>
+            </a>
+
+            <a href="./artifacts.html">
+                <div id="artifact" class="menu-buttons">
+                    <img src="./images/artifact.png" alt="artifact">
+                    <p>Artifact</p>
+                </div>
+            </a>
+
+            <a href="./pets.html">
+                <div id="pet" class="menu-buttons">
+                    <img src="./images/pet.png" alt="pet">
+                    <p>Pet</p>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div id="pet-menu">
+
+        <div id="pet-list">
+
+            <div id="pet-list-wrapper">
+
+                <div onclick="open_pet_info(this)" class="pet"><img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                    
+                    <div id="pet-info-wrapper" class="pet-wrapper">
+
+                        <p class="pet-info-rarity">Rare Level 1</p>
+                        <p class="pet-info-name">Plu Magnet</p>
+
+                        <div class="dot-breaker"></div>
+
+                        <div class="pet-info-stats">
+                            <p>Attack</p>
+                            <p>2%</p>
+                        </div>
+
+                        <div class="pet-info-stats">
+                            <p>Reduce damage from boss monster</p>
+                            <p>5%</p>
+                        </div>
+
+                        <div class="pet-info-effect">
+                            <p class="pet-info-effect-title">Mysterious Attraction [Intelligence]</p>
+                            <p>When creating a shield, increase SP Regeneration by 5%. (Max 6 stacks)</p>
+                        </div>
+
+                        <div onclick="close_pet_info(event, this)" id="pet-info-close-btn">X</div>
+
+                    </div>
+
+                </div>
+
+                <div onclick="open_pet_info(this)" class="pet"><img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                    
+                    <div id="pet-info-wrapper" class="pet-wrapper">
+
+                        <p class="pet-info-rarity">Rare Level 1</p>
+                        <p class="pet-info-name">x</p>
+
+                        <div class="dot-breaker"></div>
+
+                        <div class="pet-info-stats">
+                            <p>Attack</p>
+                            <p>2%</p>
+                        </div>
+
+                        <div class="pet-info-stats">
+                            <p>Reduce damage from boss monster</p>
+                            <p>5%</p>
+                        </div>
+
+                        <div class="pet-info-effect">
+                            <p class="pet-info-effect-title">Mysterious Attraction [Intelligence]</p>
+                            <p>When creating a shield, increase SP Regeneration by 5%. (Max 6 stacks)</p>
+                        </div>
+
+                        <div onclick="close_pet_info(event, this)" id="pet-info-close-btn">X</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function close_pet_info(e, self){
+            e.stopPropagation()
+            self.parentElement.style.display = "none"
+        }
+
+        function open_pet_info(e){
+
+            document.querySelectorAll(".pet-wrapper").forEach(function(e){
+                e.style.display = "none"
+            })
+
+            e.children["pet-info-wrapper"].style.display = "flex"
+        }
+
+    </script>
+
+    <script src="./scripts/index.js"></script>
+    
+</body>
+</html>

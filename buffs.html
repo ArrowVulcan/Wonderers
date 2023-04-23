@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buffs | Wonderers Fansite</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/buffs.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+    <bg></bg>
+
+    <div id="open-btn">
+        <img onclick="open_menu('side-menu', true)" src="./images/open.png" alt="open">
+    </div>
+
+    <div id="side-menu">
+
+        <div class="side-menu-plane"></div>
+
+        <div onclick="close_menu('side-menu')" id="close-btn">
+            <img src="./images/close.png" alt="close">
+        </div>
+
+        <img src="./images/menu_image.jpg" alt="menu_image">
+
+        <div class="menu-divider"></div>
+
+        <div id="menu-list">
+
+            <a href="./buffs.html">
+                <div id="hero" class="menu-buttons">
+                    <img src="./images/hero.png" alt="hero">
+                    <p>Hero</p>
+                </div>
+            </a>
+
+            <a href="./artifacts.html">
+                <div id="artifact" class="menu-buttons">
+                    <img src="./images/artifact.png" alt="artifact">
+                    <p>Artifact</p>
+                </div>
+            </a>
+
+            <!--
+            <a href="./pets.html">
+                <div id="pet" class="menu-buttons">
+                    <img src="./images/pet.png" alt="pet">
+                    <p>Pet</p>
+                </div>
+            </a>
+            -->
+
+        </div>
+
+    </div>
+
+    <div id="buff-menu">
+
+        <div id="buff-list">
+
+            <div class="dropdown">
+                <button id="drop-down-button" class="dropbtn">Ali baba<i class="arrow down"></i></button>
+                <div class="dropdown-content">
+                    <div onclick="change_character(this, 'ali_baba')">Ali baba</div>
+                    <div onclick="change_character(this, 'robin')">Robin</div>
+                    <!--<div onclick="change_character(this, 'oz')">Oz</div>-->
+                    <!--<div onclick="change_character(this, 'alice')">Alice</div>-->
+                    <!--<div onclick="change_character(this, 'scarlet')">Scarlet</div>-->
+                    <div onclick="change_character(this, 'snow')">Snow</div>
+                    <!--<div onclick="change_character(this, 'odile')">Odile</div>-->
+                </div>
+            </div>
+
+            <div id="buff-list-wrapper">
+
+                <div id="ali_baba" class="character">
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Attack Speed Training I</p>
+                                <p>Charge Type Attacker</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p><span class="type">Attack Speed</span> <span class="percent">+3%</span></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Dreams of Striking It Rich I</p>
+                                <p>Weakening Type Support</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p><span class="skill">Thievery</span> effect change <span class="skill">Speed</span> <span class="percent">+3%</span> for each stack of <span class="skill">Thievery</span> (lasts 10 sec, max 5 stacks)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Golden Opportunity I</p>
+                                <p>Charge Type Attacker</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When hitting enemies that have <span class="condition">30% HP or below</span> with a <span class="type">basic attack</span>, deals additional damage (<span class="percent">20%</span> of <span class="type">Attack)</span></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>The Lie that Fooled 40 Men</p>
+                                <p>Maneuver Type Assassin</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using <span class="skill">Shadow Slash</span>, create a <span class="skill">Shade</span> that lasts for <span class="duration">3 sec</span>.</p>
+                                <br>
+                                <p><span class="skill">Shade:</span> When using <span class="skill">Flash Step</span>, removes the <span class="skill">Shade</span> and teleports to its location.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Steady Preperations I</p>
+                                <p>Maneuver Type Assassin</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When hitting enemies that have <span class="condition">30% HP or below</span> with a <span class="type">weapon skill</span>, deals additional damage (<span class="percent">120%</span> of <span class="type">Attack</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Stealing Time</p>
+                                <p>Weakening Type Support</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When <span class="skill">Shadow Slash</span> hits, decreases enemy <span class="type">Attack Speed</span> for <span class="duration">7 sec</span> (<span class="percent">5%</span> per <span class="skill">Thievery</span> stack) and increases the caster's <span class="type">Attack Speed</span> (<span class="percent">5%</span> per <span class="skill">Thievery</span> stack)</p>
+                                <br>
+                                <p>Activating Stealing Time resets <span class="skill">Thievery</span> stacks.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Speed Training I</p>
+                                <p>Weakening Type Support</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p><span class="type">Speed</span> <span class="percent">+5%</span></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Attack Training I</p>
+                                <p>Maneuver Type Asssassin</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p><span class="type">Attack</span> <span class="percent">+3</span>.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>From Behind I</p>
+                                <p>Charge Type Attacker</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using a <span class="type">basic attack</span> against an enemy from <span class="type">behind</span>, deals additional damage to the target (<span class="percent">25%</span> of <span class="type">Attack</span>) and inflicts <span class="type">Poison</span>.</p>
+                                <br>
+                                <p><span class="type">Poison:</span> Deals damage every 1 sec (<span class="percent">20%</span> of <span class="type">Attack</span>, lasts for <span class="duration">8 sec</span>, max <span class="amount">9</span> stacks)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>The Three Winds</p>
+                                <p>Charge Type Attacker</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When a <span class="type">weapon skill</span> hits, <span class="type">basic attack damage</span> <span class="percent">15%</span> and inflicts <span class="type">Poison</span> (applied 1 time per sec) for <span class="amount">3</span> sec.</p>
+                                <br>
+                                <p><span class="type">Poison:</span> Deals damage every 1 sec (<span class="percent">20%</span> of <span class="type">Attack</span>, lasts for <span class="duration">8 sec</span>, max <span class="amount">9</span> stacks)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Survival Instinct</p>
+                                <p>Maneuver Type Assassin</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using <span class="skill">Shadow Slash</span>, <span class="effect">dispels all debuffs</span> from the caster.</p>
+                                <p><span class="skill">Shadow Slash</span> can be used while inflicted with debuffs.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Stroke of Darkness</p>
+                                <p>Charge Type Attacker</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When <span class="condition">defeating a player or an Elite Monster</span>, grants <span class="skill">Invincibility</span> for <span class="duration">2 sec</span>.</p>
+                                <br>
+                                <p><span class="skill">Invincibility:</span> immune to all damage and Elements.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Strike While the Iron is Hot I</p>
+                                <p>Charge Type Attacker</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using a <span class="type">basic attack</span> against an enemy inflicted with <span class="type">Poison</span>, <span class="type">Attack Speed</span> <span class="percent">+5%</span> for <span class="duration">2 sec</span> (max <span class="amount">2</span> stacks)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Narrow Escape I</p>
+                                <p>Maneuver Type Assassin</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>While in <span class="skill">Stealth</span>, <span class="condition">recovers HP</span> (<span class="percent">3%</span> of <span class="type">Max HP</span> every <span class="duration">? sec</span> if current HP is at <span class="condition">50% or below</span>.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Stealing Weapons</p>
+                                <p>Weakening Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When <span class="skill">Shadow Slash</span> hits, decreases enemy <span class="type">Attack</span> for <span class="duration">7 sec</span> (<span class="percent">5%</span> per <span class="Skill">Thievery</span> stack) and increases the caster's <span class="type">Attack</span> (<span class="percent">5%</span> per <span class="skill">Thievery</span> stack)</p>
+                                <br>
+                                <p>Activating Stealing Weapons resets <span class="skill">Thievery</span> stacks.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Stealing Freedom</p>
+                                <p>Weakening Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When a <span class="condition">weapon skill hits</span>, decreases enemy SP (<span class="amount">1 slot</span> per <span class="skill">Thievery</span> stack) and recovers the caster's <span class="type">SP</span> (<span class="amount">1 slot</span> per <span class="skill">Thievery</span> stack)</p>
+                                <br>
+                                <p>Activating Stealing Freedom resets <span class="skill">Thievery</span> stacks.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Open Sesame I</p>
+                                <p>Weakening Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using <span class="skill">Flash Step</span>, deals damage to nearby enemies (<span class="percent">2%</span> of <span class="type">Speed</span>) and <span class="condition">dispels all Shields</span> from enemies.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>The Approachin Fear I</p>
+                                <p>Maneuver Type Assassin</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>While in <span class="skill">Stealth</span>, <span class="type">weapon skill damage</span> <span class="percent">+50%</span></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Marked With an X</p>
+                                <p>Charge Type Attacker</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p><span class="skill">Elemental Reaction</span> deals additional damage to the target (<span class="percent">150%</span> of <span class="type">Attack</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Stealing Health</p>
+                                <p>Weakening Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When a <span class="condition">weapon skill hits</span>, deals additional damage (<span class="percent">2%</span> of <span class="type">Speed</span> per <span class="skill">Thievery</span> stack) and recovers the caster's <span class="type">HP</span> (<span class="percent">2%</span> of <span class="type">Speed</span> per <span class="skill">Thievery</span> stack)</p>
+                                <br>
+                                <p>Activating Stealing Health resets <span class="skill">Thievery</span> stacks.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Terrific Thievery I</p>
+                                <p>Weakening Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>Upon <span class="condition">defeating and enemy</span>, <span class="condition">recovers HP</span> (<span class="percent">10%</span> of <span class="type">Speed</span>) and gains 5 <span class="skill">Thievery</span> stacks.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Calm Assassin I</p>
+                                <p>Maneuver Type Assassin</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>While in <span class="skill">Stealth</span>, <span class="type">Attack</span> <span class="amount">+2.5</span> and <span class="type">Defense</span> <span class="amount">-1</span> every <span class="duration">? sec</span> for 3 sec (max 10 stacks)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Into the Darkness I</p>
+                                <p>Maneuver Type Assassin</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using <span class="skill">Shadow Slash</span>, gains <span class="skill">Invincibility</span> for <span class="duration">1 sec</span>.</p>
+                                <br>
+                                <p><span class="skill">Invincibility:</span> Immune to all damage and Elements.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="robin" class="character" style="display: none;">
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>How to Survive in the Forest</p>
+                                <p>Weakening Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using <span class="skill">Target Lock On</span>, makes the caster fire in the opposite direction (<span class="percent">100%</span> of <span class="type">Attack</span>), and when the attack hits, inflicts <span class="skill">Target</span>.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Bullseye I</p>
+                                <p>Ranged Archer</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When activating while Robin's body glows <span class="condition">from charging his basic attack</span>, deals additional damage (<span class="percent">15%</span> of <span class="type">Attack</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Breath of the Forest</p>
+                                <p>Weakening Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p><span class="condition">Targeted</span> enemy's <span class="type">Speed</span> <span class="percent">-20%</span></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Resistance against Authority I</p>
+                                <p>Mage Focus</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When <span class="skill">Volley Shot</span> hits, deals area damage (<span class="percent">30%</span> of <span class="type">Attack</span>) and grants <span class="effect">Knock Back</span>.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Painkillers</p>
+                                <p>Ranged Archer</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>While in <span class="condition">basic attack charging</span> state, <span class="type">Defense</span> <span class="percent">+100%</span></p>
+                                <p>When taking damage during <span class="condition">basic attack charging</span> state, increases charging stage by 1.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Breath of a Sniper I</p>
+                                <p>Mage Focus</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When <span class="condition">using a weapon skill</span>, <span class="skill">Volley Shot</span>'s damage <span class="percent">+20%</span> for 3 sec.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Efficient Design</p>
+                                <p>Mage Focus</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When <span class="condition">using a weapon skill</span>, gains <span class="skill">Posture Correction</span>.</p>
+                                <br>
+                                <p><span class="skill">Posture Correction:</span> Skill damage <span class="percent">+15%</span> for 3 sec (max 3 stacks)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Happy People</p>
+                                <p>Mage Focus</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>Removes <span class="skill">Volley Shot</span>'s cooldown.</p>
+                                <p>When using <span class="skill">Volley Shot</span>, <span class="type">SP</span> <span class="negative">-1 slot</span>.</p>
+                                <p>Decreases the number of <span class="skill">Volley Shot</span>'s projectiles (9 shots -> <span class="negative">3</span> shots)</p>
+                                <p>Increases <span class="skill">Volley Shot</span>'s damage (<span class="percent">100%</span> of <span class="type">Attack</span> -> <span class="percent">150%</span> of <span class="type">Attack</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Respiratory Correction I</p>
+                                <p>Mage Focus</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using <span class="skill">Volley Shot</span>, has a <span class="percent">20%</span> chance to <span class="type">recover SP</span> (<span class="amount">1 slot</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Speed Training I</p>
+                                <p>Weakening Type Support</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p><span class="type">Speed</span> <span class="percent">+5%</span></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>SP Training I</p>
+                                <p>Mage Focus</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p><span class="type">SP</span> <span class="amount">+1 slot</span>.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Overcomming the Wind</p>
+                                <p>Ranged Archer</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>According to <span class="condition">charging stage</span>, fires a Tracer Arrow that deals damage (<span class="percent">50%</span> of <span class="type">Attack</span>) (Max <span class="amount">3</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>The Ghost of Sherwood Forest I</p>
+                                <p>Ranged Archer</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p><span class="type">Basic attack</span> charging speed <span class="percent">+100%</span></p>
+                                <p><span class="type">Basic attack</span> damage<span class="negative">-40%</span></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Quiver Replacement I</p>
+                                <p>Mage Focus</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using <span class="skill">Volley Shot</span>, <span class="type">decreases cooldown</span> of weapon skills (<span class="duration">1 sec</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Attack Training I</p>
+                                <p>Ranged Archer</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p><span class="type">Attack</span> <span class="percent">+3</span>.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>A Single Sure Shot</p>
+                                <p>Ranged Archer</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>Increases max charging stage (Stage 2 -> <span class="effect">Stage 3</span>, Damage: <span class="percent">260%</span> of <span class="type">Attack</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Reason to Kneel I</p>
+                                <p>Weakening Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p><span class="condition">Targeted</span> enemy's <span class="type">SP recovery</span> -15% and <span class="type">Defense</span> <span class="percent">-25%</span></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Making Skewers</p>
+                                <p>Mage Focus</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>Grants <span class="effect">Penetration</span> to <span class="skill">Volley Shot</span>.</p>
+                                <p>A target hit by <span class="skill">Volley Shot</span> becomes <span class="type">Speed</span> <span class="percent">-15%</span> for 3 sec.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Marksmanship</p>
+                                <p>Weakening Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using <span class="skill">Target Lock On</span>, gains <span class="skill">Concentration</span>.</p>
+                                <br>
+                                <p><span class="skill">Concentration:</span> Begins charging after skipping the charging stage of <span class="type">basic attack</span> equal to the number of <span class="skill">Concentration</span> stacks.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Robin Arrow I</p>
+                                <p>Weakening Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                               <p>Reduces <span class="type">Attack</span> by <span class="negative">10%</span></p>
+                               <p>Upon attacking a <span class="condition">[Targeted]</span> enemy, deals additional damage (equal to <span class="percent">2%</span> of <span class="type">Speed</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Increased Concentration I</p>
+                                <p>Weakening Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                               <p>When there are no enemies within 4 meters, increases <span class="type">Attack</span> by <span class="percent">10%</span> and <span class="type">Speed</span> by <span class="percent">10%</span></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Using Enemies to Fight Enemies I</p>
+                                <p>Ranged Archer</p>
+                            </div>
+
+                            <div class="buff-info">
+                               <p>When a <span class="condition">basic attack hits</span>, <span class="type">Critical Hit Chance</span> <span class="percent">+10%</span>, resets on a critical hit.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Piercing Shot</p>
+                                <p>Ranged Archer</p>
+                            </div>
+
+                            <div class="buff-info">
+                               <p>Upon <span class="condition">charged attack</span> at Stage 1 or above, grants <span class="effect">Penetration</span> effect to <span class="type">basic attack</span>.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Persistence of a Sniper</p>
+                                <p>Weakening Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                               <p>When <span class="skill">Volley Shot</span> hits, inflicts <span class="skill">Target</span>.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="snow" class="character" style="display: none;">
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Path of the Empress</p>
+                                <p>Bruiser</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When a <span class="condition">charged attack hits</span>, <span class="type">Max HP</span> <span class="amount">+1</span> (max <span class="amount">35</span> stacks)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Blockade I</p>
+                                <p>Enhancement Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p><span class="type">Decreases cooldown</span> of the <span class="skill">Castle of the Empress</span> (15 sec -> <span class="duration">12 sec</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>On Strike I</p>
+                                <p>Enhancement Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p><span class="type">Attack</span> <span class="percent">+25%</span> and <span class="type">Defense</span> <span class="percent">+25%</span> for allies within the <span class="skill">Castle of the Empress</span>.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Balance of the Empress I</p>
+                                <p>Tank</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>Upon <span class="condition">landing a critical hit</span>, creates a Shield for <span class="duration">3 sec</span> (<span class="percent">5%</span> of <span class="type">Max HP</span>, applied 1 time every 2 sec)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>HP Training I</p>
+                                <p>Tank</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p><span class="type">Max HP</span> <span class="amount">+15</span>.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Safe Warm-up I</p>
+                                <p>Bruiser</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>Upon <span class="condition">landing a critical hit with a charged attack</span>, recovers HP (<span class="percent">2%</span> of <span class="type">Max HP</span>, applied 1 time per sec)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Defense Training I</p>
+                                <p>Enhancement Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p><span class="type">Defense</span> <span class="amount">+10</span>.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Mob Psychology I</p>
+                                <p>Enhancement Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>Deals damage to enemies within the <span class="skill">Castle of the Empress</span> (<span class="percent">25%</span> of <span class="type">Defense</span>, applied 1 time per sec)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>How to Use Shock I</p>
+                                <p>Bruiser</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using a <span class="type">charged attack</span>, deals additional damage when a <span class="condition">weapon skill hits</span> (<span class="percent">50%</span> of <span class="type">Defense</span>) for 3 sec.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Beloved Monarch I</p>
+                                <p>Enhancement Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p><span class="type">Recovers HP</span> of allies within the <span class="skill">Castle of the Empress</span> (<span class="percent">20%</span> of <span class="type">Defense</span>, applied 1 time per sec)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>With Full Strenght? I</p>
+                                <p>Bruiser</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>Upon <span class="condition">landing a critical hit with a charged attack</span>, deals additional damage (<span class="percent">10%</span> of <span class="type">Defense</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Weight of the Crown I</p>
+                                <p>Bruiser</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>While in <span class="condition">basic attack charging</span> state, <span class="type">Defense</span> <span class="percent">+50%</span></p>
+                                <p>When <span class="type">attacked</span> while in <span class="condition">basic attack charging</span> state, <span class="type">Speed</span> <span class="percent">+15%</span> for 1 sec.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Attitude Is What Matters</p>
+                                <p>Tank</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When Shielded, <span class="type">basic attack</span>'s charging speed <span class="percent">+100%</span></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Offense and Defense I</p>
+                                <p>Tank</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When <span class="condition">using a weapon skill</span>, gains a <span class="type">Shield</span> for <span class="duration">3 sec</span> (<span class="percent">10%</span> of <span class="type">Max HP</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>The Best Defense Is Offense</p>
+                                <p>Enhancement Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When its duration ends, <span class="skill">Castle of the Empress</span> explodes and deals damage (<span class="percent">300%</span> of <span class="type">Defense</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>I Don't Like Being Lonely</p>
+                                <p>Enhancement Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>Grants a <span class="type">Shield</span> for 2 sec to allies within the <span class="skill">Castle of the Empress</span> (<span class="percent">5%</span> of <span class="type">Max HP</span>, applied 1 time per sec)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Breaking Mirrors</p>
+                                <p>Bruiser</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>Increases <span class="condition">max charging stage</span> to <span class="type">Stage 2</span>.</p>
+                                <br>
+                                <p>Stage 2: Deals damage (<span class="perecent">200%</span> of <span class="type">Attack</span>) while pulling in enemies, deals damage (<span class="percent">300%</span> of <span class="type">Attack</span>), and grants them <span class="effect">Airborne</span> for a short time.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function change_character(e, hero){
+        
+            document.querySelectorAll(".character").forEach(function(e){
+                e.style.display = "none"
+            })
+
+            let character = document.getElementById(hero)
+            character.style.display = "block"
+
+            document.getElementById("drop-down-button").innerHTML = e.innerText + '<i class="arrow down"></i>'
+        
+        }
+
+    </script>
+
+    <script src="./scripts/index.js"></script>
+    
+</body>
+</html>
