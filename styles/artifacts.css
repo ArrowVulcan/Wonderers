@@ -73,6 +73,7 @@ square{
     display: none;
     flex-direction: column;
     align-items: center;
+    z-index: 100;
 }
 
 #artifact-info-close-btn{
