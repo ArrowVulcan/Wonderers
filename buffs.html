@@ -67,7 +67,7 @@
                 <div class="dropdown-content">
                     <div onclick="change_character(this, 'ali_baba')">Ali baba</div>
                     <div onclick="change_character(this, 'robin')">Robin</div>
-                    <!--<div onclick="change_character(this, 'oz')">Oz</div>-->
+                    <div onclick="change_character(this, 'oz')">Oz</div>
                     <!--<div onclick="change_character(this, 'alice')">Alice</div>-->
                     <!--<div onclick="change_character(this, 'scarlet')">Scarlet</div>-->
                     <div onclick="change_character(this, 'snow')">Snow</div>
@@ -1458,6 +1458,517 @@
                                 <p>Increases <span class="condition">max charging stage</span> to <span class="type">Stage 2</span>.</p>
                                 <br>
                                 <p>Stage 2: Deals damage (<span class="perecent">200%</span> of <span class="type">Attack</span>) while pulling in enemies, deals damage (<span class="percent">300%</span> of <span class="type">Attack</span>), and grants them <span class="effect">Airborne</span> for a short time.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="oz" class="character" style="display: none;">
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Over Blink I</p>
+                                <p>Enhancement Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using <span class="skill">Blink</span>, <span class="type">Speed</span> of the caster and nearby allies at the destination <span class="percent">+15%</span> for <span class="duration">5 sec</span>.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Elemental Master I</p>
+                                <p>Mage Focus</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>Upon <span class="skill">Elemental Reaction</span>, <span class="type">Attack</span> <span class="percent">+10%</span> for 5 sec (max 3 stacks)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Magic Specialization: Fire</p>
+                                <p>Mage Focus</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using <span class="skill">Explosion</span>, shoots a <span class="skill">Fireball</span> that deals area damage in the designated direction (<span class="percent">100%</span> of <span class="type">Attack</span> per Mark) and inflicts Fire Element.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Frostbite</p>
+                                <p>Mage AoE</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When a <span class="condition">weapon skill hits</span>, decreases the target's SP (<span class="amount">1 slot</span>, applied 1 time per sec)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Link Sphere</p>
+                                <p>Mage Focus</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>Upon <span class="condition">a successful basic attack</span>, <span class="type">decreases cooldown</span> of <span class="skill">Explosion</span> (<span class="duration">1 sec</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Harbinger of the Storm</p>
+                                <p>Enhancement Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>Increases the duration of Mark (5 sec -> <span class="duration">10 sec</span>)</p>
+                                <p>When using <span class="skill">Explosion</span>, <span class="effect">doubles</span> Mark's explosion area.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Magic Specialization: Water</p>
+                                <p>Mage AoE</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using <span class="skill">Explosion</span>, creates <span class="skill">Ice Spears</span> equal to the number of Marks that chase enemies and last for 10 sec, dealing damage (<span class="percent">30%</span> of <span class="type">Attack</span>) and inflicting Water Element (max 5)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Cooldown Training I</p>
+                                <p>Mage AoE</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p><span class="type">Decreases cooldown</span> by <span class="percent">3%</span></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Speed Training I</p>
+                                <p>Enhancement Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p><span class="type">Speed</span> <span class="percent">+5%</span></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Self-Proclaimed Great Mage I</p>
+                                <p>Mage Focus</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>Upon <span class="condition">a successful basic attack</span>, <span class="type">weapon skill damage</span> <span class="percent">+10%</span> for 3 sec (max 5 stacks)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>The Great And Powerful</p>
+                                <p>Mage Focus</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using <span class="skill">Explosion</span>, deals additional damage to enemies inflicted with Mark (<span class="percent">150%</span> of <span class="type">Attack</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Mana Control I</p>
+                                <p>Mage Focus</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using <span class="skill">Explosion</span>, <span class="type">Attack</span> <span class="percent">+15%</span> for <span class="duration">5 sec</span>.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Whirling Heat</p>
+                                <p>Mage Focus</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>Changes <span class="type">basic attack</span> into launching <span class="effect">multiple</span> projectiles.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Attack Training</p>
+                                <p>Mage Focus</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p><span class="type">Attack</span> <span class="amount">+3</span>.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Seeping Cold</p>
+                                <p>Mage AoE</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When <span class="skill">Ice Spear</span> hits, <span class="type">decreases cooldown</span> of Oz's weapon skills (<span class="duration">1 sec</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Biting Cold I</p>
+                                <p>Mage AoE</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When <span class="condition">using a weapon skill</span>, deals damage (<span class="percent">30%</span> of <span class="type">Attack</span>) and creates 1 <span class="skill">Ice Spear</span> that inflicts Water Element.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>With Old Age Comes Wisdom I</p>
+                                <p>Enhancement Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When <span class="condition">using a weapon skill</span>, the caster and nearby allies' <span class="type">weapon skill damage</span> <span class="percent">+20%</span> for <span class="duration">3 sec</span>.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Wind Shield</p>
+                                <p>Enhancement Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using <span class="skill">Blink</span>, <span class="effect">dispels all debuffs</span> from nearby allies at the destination (applied 1 time every 5 sec)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Cooling One's Head</p>
+                                <p>Mage AoE</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using <span class="skill">Blink</span>, <span class="type">decreases cooldown</span> of weapon skills (<span class="duration">1 sec</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Ice Shield I</p>
+                                <p>Mage AoE</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>Upon taking fatal damage, turns into an ice cube with <span class="skill">Invincibility</span> for 3 sec and recovers HP (<span class="percent">10%</span> of <span class="type">Max HP</span>, lasts for 3 sec, applied 1 time per sec, cooldown 120 sec)</p>
+                                <br>
+                                <p><span class="skill">Invincibility:</span> Immune to all damage and Elements.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Rewind Magic I</p>
+                                <p>Mage AoE</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using <span class="skill">Explosion</span>, <span class="type">decreases cooldown</span> of weapon skills (<span class="duration">1 sec</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Shiny Buttons</p>
+                                <p>Enhancement Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using <span class="skill">Explosion</span>, <span class="type">decreases cooldowns</span> of all skills of the caster and nearby allies (<span class="duration">1 sec</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Gentle Wind I</p>
+                                <p>Enhancement Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>Upon <span class="skill">Elemental Reaction</span>, <span class="type">recovers SP</span> (<span class="amount">1 slot</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Magic Specialization: Wind I</p>
+                                <p>Enhancement Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using <span class="skill">Explosion</span>, knocks back nearby enemies, dealing damage (<span class="percent">15%</span> of <span class="type">Attack</span>) and recovering HP of all allies including the caster (<span class="percent">1%</span> of <span class="type">Speed</span> per mark) (lasts for 5 sec, applied 1 time per sec)</p>
                             </div>
 
                         </div>

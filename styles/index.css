@@ -208,7 +208,7 @@ button{
     background-repeat: no-repeat;
     width: 19px;
     height: 70px;
-    left: 31px;
+    left: -18px;
     position: absolute;
 }
 
@@ -218,7 +218,7 @@ button{
     background-repeat: no-repeat;
     width: 19px;
     height: 70px;
-    right: 31px;
+    right: -18px;
     position: absolute;
     transform: scaleX(-1);
 }
@@ -357,6 +357,11 @@ button{
 
     #side-menu{
         width: 100vw;
+        border-left: none;
+    }
+
+    .dropdown{
+        margin-left: 10px;
     }
 
     #home img{

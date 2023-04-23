@@ -3,6 +3,7 @@
     min-height: 100vh;
     display: flex;
     justify-content: center;
+    margin-top: 60px;
 }
 
 #artifact-list{
@@ -30,6 +31,15 @@
 .artifact-row{
     display: flex;
     align-items: center;
+}
+
+square{
+    width: 7px;
+    height: 7px;
+    background-color: #FFF;
+    display: inline-block;
+    transform: scalex(0.8) rotate(45deg);
+    margin: 8px 3px 0px 3px;
 }
 
 .no-space{
@@ -76,6 +86,7 @@
     font-size: 32px;
     font-weight: bold;
     margin-top: auto;
+    position: relative;
 }
 
 .artifact-detail-bar{
@@ -121,6 +132,7 @@
     margin: 10px 0px 10px 90px;
     border-bottom: 2px dotted #FFF5;
     padding-bottom: 10px;
+    margin-right: 10px;
 }
 
 @media screen and (max-width: 600px){
@@ -147,7 +159,7 @@
     }
 
     #artifact-info-close-btn{
-        width: 294px;
+        width: 280px;
     }
 
 }

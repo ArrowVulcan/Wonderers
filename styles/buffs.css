@@ -87,7 +87,7 @@ select:hover, option:hover{
 @media screen and (max-width: 600px){
 
     .buff{
-        max-width: 100vw;
+        max-width: 98vw;
         min-height: 200px;
         height: unset;
     }
