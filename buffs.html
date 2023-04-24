@@ -71,7 +71,7 @@
                     <!--<div onclick="change_character(this, 'alice')">Alice</div>-->
                     <!--<div onclick="change_character(this, 'scarlet')">Scarlet</div>-->
                     <div onclick="change_character(this, 'snow')">Snow</div>
-                    <!--<div onclick="change_character(this, 'odile')">Odile</div>-->
+                    <div onclick="change_character(this, 'odile')">Odile</div>
                 </div>
             </div>
 
@@ -1969,6 +1969,503 @@
 
                             <div class="buff-info">
                                 <p>When using <span class="skill">Explosion</span>, knocks back nearby enemies, dealing damage (<span class="percent">15%</span> of <span class="type">Attack</span>) and recovering HP of all allies including the caster (<span class="percent">1%</span> of <span class="type">Speed</span> per mark) (lasts for 5 sec, applied 1 time per sec)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="odile" class="character" style="display: none;">
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>145 Minutes, Silence I</p>
+                                <p>Mage Focus</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When <span class="skill">Force: Drive</span> hits, inflicts <span class="effect">Instant Death</span> on targets with <span class="condition">less than 15% HP</span>.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Odile's Counterstrike I</p>
+                                <p>Weakening Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p><span class="skill">Force: Repulser</span>'s Counterattack inflicts <span class="type">Bleed</span> and <span class="type">recovers HP</span> equal to the amount of damage dealth.</p>
+                                <br>
+                                <p><span class="skill">Bleed:</span> Deals damage every 0.5 sec for 5 sec (<span class="percent">5%</span> of <span class="type">Attack</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Disenchant I</p>
+                                <p>Weakening Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When a <span class="condition">basic attack hits</span> an enemy inflicted with <span class="skill">Bleed</span>, deals additional damage (<span class="percent">10%</span> of <span class="type">Attack</span>) and the target's <span class="type">Defense</span> <span class="amount">-15</span> for 2 sec.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Act 4 Begins</p>
+                                <p>Charge Type Attacker</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When dispelling <span class="skill">Force</span> state, recovers SP (<span class="amount">1 slot</span>), dealing damage to nearby enemies (<span class="percent">200%</span> of <span class="type">Attack</span>), and nearby enemies' <span class="type">Speed</span> <span class="percent">-10%</span> for 3 sec.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Attack Training I</p>
+                                <p>Charge Type Attacker</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p><span class="type">Attack</span> <span class="amount">+3</span>.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Mana Absorption</p>
+                                <p>Weakening Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using <span class="skill">Force: Drive</span>, recovers <span class="type">SP</span> (<span class="amount">1 slot</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Grace In Combat</p>
+                                <p>Weakening Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using <span class="skill">Force: Repulser</span> while not in Force state, <span class="type">Speed</span> <span class="percent">+20%</span> for 2 sec.</p>
+                                <p>When using <span class="skill">Force: Repulser</span> during Force state, <span class="type">Attack Speed</span> <span class="percent">+20%</span> for 2 sec.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Mindset of a Challenger</p>
+                                <p>Weakening Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When a <span class="condition">basic attack hits</span> an enemy inflicted with <span class="skill">Bleed</span>, has a 10% chance to decrease the enemy's SP (<span class="amount">1 slot</span>) and recovers Odile's <span class="type">SP</span> (<span class="amount">1 slot</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Inherited Power</p>
+                                <p>Charge Type Attacker</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using <span class="skill">Force: Install</span>, inflicts <span class="skill">Bleed</span> on nearby enemies, dealing damage (<span class="percent">100%</span> of <span class="type">Attack</span>) and pulling them in.</p>
+                                <br>
+                                <p><span class="skill">Bleed:</span> Deals damage every 0.5 sec for 5 sec (<span class="percent">5%</span> of <span class="type">Attack</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Intrusive Demonic Sword</p>
+                                <p>Charge Type Attacker</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using a <span class="type">basic attack</span> while in <span class="skill">Force</span> state, decreases HP (<span class="percent">1%</span> of <span class="type">Max HP</span>)</p>
+                                <p>When a <span class="condition">basic attack hits</span> while in <span class="skill">Force</span> state, <span class="type">recovers HP</span> (<span class="percent">5%</span> of <span class="type">Attack</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Malicious Blood Transfusion</p>
+                                <p>Charge Type Attacker</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When a <span class="condition">basic attack hits</span> while in <span class="skill">Force</span> state, inflicts <span class="skill">Bleed</span> on the enemy.</p>
+                                <br>
+                                <p><span class="skill">Bleed:</span> Deals damage every 0.5 sec for 5 sec (<span class="percent">5%</span> of <span class="type">Attack</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Rothbart's Curse I</p>
+                                <p>Charge Type Attacker</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>While in <span class="skill">Force</span> state, <span class="type">Attack</span> <span class="percent">+30%</span> and <span class="type">Defense</span> <span class="negative">-10</span>.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Black Swan I</p>
+                                <p>Weakening Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When <span class="skill">Force: Repulser</span>'s Counterattack is activated, deals damage (<span class="percent">30%</span> of <span class="type">Attack</span>) and fires a projectile that decreases <span class="type">Speed</span> by <span class="percent">10%</span> toward the nearest enemy.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Water, Ice, and the Swan</p>
+                                <p>Mage Focus</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When <span class="condition">using a weapon skill</span>, <span class="effect">resets cooldown</span> of <span class="skill">Force: Install</span>.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>SP Training I</p>
+                                <p>Weakening Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p><span class="type">SP</span> <span class="amount">+1 slot</span>.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Duel Request I</p>
+                                <p>Mage Focus</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When a <span class="condition">basic attack hits</span>, <span class="type">weapon skill damage</span> <span class="percent">+50%</span> for <span class="duration">3 sec</span> (max 5 stacks)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Blazing Mana I</p>
+                                <p>Mage Focus</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When defeating a <span class="type">player</span> or an <span class="type">Elite Monster</span>, recovers <span class="type">SP</span> (<span class="amount">1 slot</span>) and <span class="type">recovers HP</span> for 5 sec (<span class="percent">2%</span> of <span class="type">Max HP</span>, applied 1 time per sec)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Overflow I</p>
+                                <p>Charge Type Attacker</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using <span class="skill">Force: Install</span>, <span class="negative">consumes all</span> <span class="type">SP</span>.</p>
+                                <p>While in Force State, <span class="type">basic attack</span> range <span class="percent">+25%</span></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Dark Red Mana I</p>
+                                <p>Weakening Type Supporter</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>When using a <span class="type">basic attack</span> while using <span class="skill">Force: Repulser</span>, fires sword energy that deals damage (<span class="percent">30%</span> of <span class="type">Attack</span>) for 3 sec.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Cooldown Training I</p>
+                                <p>Mage Focus</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p><span class="type">Decreases cooldown</span> by <span class="percent">3%</span></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Full Drive</p>
+                                <p>Mage Focus</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>Increases <span class="skill">Force: Drive</span>'s damage (300% of <span class="type">Attack</span> -> <span class="percent">600%</span> of Attack)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>Blood Heritage I</p>
+                                <p>Charge Type Attacker</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>Increases the cooldown of <span class="skill">Force: Install</span> (<span class="negative">3 sec</span>)</p>
+                                <p>When using <span class="skill">Force: Install</span>, gains a Shield for 2 sec (<span class="percent">25%</span> of <span class="type">Max HP</span>)</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buff">
+
+                        <div class="buff-image-wrapper">
+                            <img src="" onerror="this.onerror=null; this.src='./images/no_image.jpg'" alt="">
+                        </div>
+
+                        <div id="buff-info-wrapper">
+
+                            <div class="buff-header">
+                                <p>The Joys of Battle</p>
+                                <p>Mage Focus</p>
+                            </div>
+
+                            <div class="buff-info">
+                                <p>While using a <span class="type">weapon skill</span>, <span class="effect">Immune to all Element States</span> and <span class="type">Defense</span> <span class="percent">+75%</span></p>
                             </div>
 
                         </div>
