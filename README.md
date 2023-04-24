@@ -1,2 +1,4 @@
 # Wonderers
- Info stuff for the game Wonderers.
+A fansite for the game Wonderers: Eternal World.
+
+Try it: https://arrowvulcan.github.io/Wonderers/
