@@ -1,0 +1,38 @@
+#info-menu{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#info-menu-wrapper{
+    width: 700px;
+    margin: 40px 20px;
+}
+
+#element-wrapper, #element-reactions{
+    display: flex;
+    flex-direction: column;
+}
+
+#element-wrapper img, #element-reactions img{
+    width: 52px;
+    height: 60px;
+    margin: 4px;
+}
+
+#element-wrapper div, #element-reactions div{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#element-wrapper p, #element-reactions p{
+    margin-left: 20px;
+}
+
+h1, h2, h3, h4{
+    margin: 20px 0px;
+}

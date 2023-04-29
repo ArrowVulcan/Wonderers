@@ -53,6 +53,13 @@
                 </div>
             </a>
 
+            <a href="./info">
+                <div id="info" class="menu-buttons">
+                    <img src="./images/codex.png" alt="codex">
+                    <p>Info</p>
+                </div>
+            </a>
+
             <!--
             <a href="./pets">
                 <div id="pet" class="menu-buttons">
@@ -1081,6 +1088,217 @@
             </div>
 
             <p class="artifact-location">Chapter 2: Frozen Castle</p>
+
+            <div class="artifact">
+
+                <div class="artifact-image">
+                    <img src="" onerror="this.onerror=null; this.src='./images/artifacts/green_power.png'" alt="green_power">
+                    <span class="artifact-image-slots"><square></square><square></square><square></square></span>
+                </div>
+
+                <div class="artifact-row">
+                    
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/talisman_of_protection.jpg'" alt="talisman_of_protection">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/talisman_of_protection.jpg'" alt="talisman_of_protection">
+
+                            <p class="artifact-title">Talisman of Protection</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Fantastic Flavor</p>
+                            </div>
+
+                            <div class="artifact-info-stats">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/fantastic_flavor.png" alt="fantastic_flavor">
+                                <p>When <span class="condition">HP is at 30% or below</span>, gains a <span class="type">Shield</span> that lasts for 15 sec every 15 sec (<span class="percent">10%</span> of <span class="type">Max HP</span>)</p>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Green Power</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/green_power.png" alt="green_power">
+                                <div>
+                                    <p>When <span class="condition">current HP</span> is at 35% of Max HP or above, decreases HP (<span class="negative">10%</span> of <span class="type">Max HP</span>, applied 1 time <span class="duration">per sec</span>)</p>
+                                    <p>When <span class="condition">Current HP</span> is at 25% or below, recovers HP (<span class="percent">5%</span> of <span class="type">Max HP</span>, applied 1 time every <span class="duration">0.5 sec</span>)</p>
+                                </div>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/bloody_bandage.jpg'" alt="bloody_bandage">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/bloody_bandage.jpg'" alt="bloody_bandage">
+
+                            <p class="artifact-title">Bloody Bandage</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Ability Detail</p>
+                            </div>
+
+                            <div class="artifact-info-stats">
+                                    <p>Cooldown Reduction</p>
+                                    <p>-1%</p>
+                            </div>
+
+                            <div class="artifact-info-stats">
+                                    <p>HP Regeneration</p>
+                                    <p>3</p>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Green Power</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/green_power.png" alt="green_power">
+                                <div>
+                                    <p>When <span class="condition">current HP</span> is at 35% of Max HP or above, decreases HP (<span class="negative">10%</span> of <span class="type">Max HP</span>, applied 1 time <span class="duration">per sec</span>)</p>
+                                    <p>When <span class="condition">Current HP</span> is at 25% or below, recovers HP (<span class="percent">5%</span> of <span class="type">Max HP</span>, applied 1 time every <span class="duration">0.5 sec</span>)</p>
+                                </div>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/radioactive_drink.jpg'" alt="radioactive_drink">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/radioactive_drink.jpg'" alt="radioactive_drink">
+
+                            <p class="artifact-title">Radioactive Drink</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Radioactive Drink</p>
+                            </div>
+
+                            <div class="artifact-info-stats no-space">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/hard_training.png" alt="hard_training">
+                                <div>
+                                    <p><span class="type">Defense</span> <span class="negative">-30%</span></p>
+                                    <p>When <span class="condition">HP is at 30%</span> or below, decrease <span class="type">skill cooldown</span> by <span class="percent">6%</span></p>
+                                </div>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Green Power</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/green_power.png" alt="green_power">
+                                <div>
+                                    <p>When <span class="condition">current HP</span> is at 35% of Max HP or above, decreases HP (<span class="negative">10%</span> of <span class="type">Max HP</span>, applied 1 time <span class="duration">per sec</span>)</p>
+                                    <p>When <span class="condition">Current HP</span> is at 25% or below, recovers HP (<span class="percent">5%</span> of <span class="type">Max HP</span>, applied 1 time every <span class="duration">0.5 sec</span>)</p>
+                                </div>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/potion_shot.jpg'" alt="potion_shot">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/potion_shot.jpg'" alt="potion_shot">
+
+                            <p class="artifact-title">Potion Shot</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Green Poisoning</p>
+                            </div>
+
+                            <div class="artifact-info-stats no-space">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/green_poisoning.png" alt="green_poisoning">
+                                <div>
+                                    <p>Upon reaching <span class="condition">30% HP or below</span>, increase <span class="type">Attack</span> by <span class="percent">35%</span></p>
+                                    <p>Upon <span class="condition">taking damage</span>, grants <span class="negative">Lightning</span> Element to the caster.</p>
+                                </div>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Green Power</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/green_power.png" alt="green_power">
+                                <div>
+                                    <p>When <span class="condition">current HP</span> is at 35% of Max HP or above, decreases HP (<span class="negative">10%</span> of <span class="type">Max HP</span>, applied 1 time <span class="duration">per sec</span>)</p>
+                                    <p>When <span class="condition">Current HP</span> is at 25% or below, recovers HP (<span class="percent">5%</span> of <span class="type">Max HP</span>, applied 1 time every <span class="duration">0.5 sec</span>)</p>
+                                </div>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div onclick="open_artifact_info(this)"><img src="" onerror="this.onerror=null; this.src='./images/artifacts/regeneration_orb.jpg'" alt="regeneration_orb">
+                        
+                        <div id="artifact-info-wrapper" class="artifact-wrapper">
+                        
+                            <img src="" onerror="this.onerror=null; this.src='./images/artifacts/regeneration_orb.jpg'" alt="regeneration_orb">
+
+                            <p class="artifact-title">Regeneration Orb</p>
+
+                            <div class="artifact-detail-bar">
+                                <p>Orb's Protection</p>
+                            </div>
+
+                            <div class="artifact-info-stats no-space">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/green_poisoning.png" alt="green_poisoning">
+                                <div>
+                                    <p>When <span class="condition">HP is at 30% or below</span>, <span class="type">Defense</span> <span class="percent">50%</span></p>
+                                </div>
+                            </div>
+
+                            <div class="artifact-detail-bar">
+                                <p>Green Power</p>
+                            </div>
+
+                            <div class="artifact-info-effect">
+                                <img class="artifact-info-stats-image" src="./images/artifacts/green_power.png" alt="green_power">
+                                <div>
+                                    <p>When <span class="condition">current HP</span> is at 35% of Max HP or above, decreases HP (<span class="negative">10%</span> of <span class="type">Max HP</span>, applied 1 time <span class="duration">per sec</span>)</p>
+                                    <p>When <span class="condition">Current HP</span> is at 25% or below, recovers HP (<span class="percent">5%</span> of <span class="type">Max HP</span>, applied 1 time every <span class="duration">0.5 sec</span>)</p>
+                                </div>
+                            </div>
+
+                            <div onclick="close_artifact_info(event, this)" id="artifact-info-close-btn" class="button">
+                                <img src="./images/close.png" alt="close">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
     

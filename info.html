@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info | Wonderers Fansite</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/info.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+    <bg></bg>
+
+    <div id="open-btn">
+        <img onclick="open_menu('side-menu', true)" src="./images/open.png" alt="open">
+    </div>
+
+    <div id="side-menu">
+
+        <div class="side-menu-plane">
+
+            <div id="github-logo">
+                <a href="https://github.com/ArrowVulcan/Wonderers">
+                    <img src="./images/github-mark-white.png" alt="github" width="40px" height="39px">
+                </a>
+            </div>
+
+        </div>
+
+        <div onclick="close_menu('side-menu')" id="close-btn">
+            <img src="./images/close.png" alt="close">
+        </div>
+
+        <img src="./images/menu_image.jpg" alt="menu_image">
+
+        <div class="menu-divider"></div>
+
+        <div id="menu-list">
+
+            <a href="./buffs">
+                <div id="hero" class="menu-buttons">
+                    <img src="./images/hero.png" alt="hero">
+                    <p>Hero</p>
+                </div>
+            </a>
+
+            <a href="./artifacts">
+                <div id="artifact" class="menu-buttons">
+                    <img src="./images/artifact.png" alt="artifact">
+                    <p>Artifact</p>
+                </div>
+            </a>
+
+            <a href="./info">
+                <div id="info" class="menu-buttons">
+                    <img src="./images/codex.png" alt="codex">
+                    <p>Info</p>
+                </div>
+            </a>
+
+            <!--
+            <a href="./pets">
+                <div id="pet" class="menu-buttons">
+                    <img src="./images/pet.png" alt="pet">
+                    <p>Pet</p>
+                </div>
+            </a>
+            -->
+
+        </div>
+
+    </div>
+
+    <div id="info-menu">
+
+        <div id="info-menu-wrapper">
+
+            <h1>Elemental Reaction</h1>
+
+            <p>To make an Elemental Reaction, you will need to combine two elements on a monster.</p>
+            <p>When two elements combine, it will create a new effect/debuff on the monster.</p>
+
+            <h2>Elements</h2>
+            <div id="element-wrapper">
+
+                <div>
+                    <img src="./images/elements/water.jpg" alt="water">
+                    <p>Water: Slows enemies.</p>
+                </div>
+
+                <div>
+                    <img src="./images/elements/wind.jpg" alt="wind">
+                    <p>Wind: </p>
+                </div>
+                
+                <div>
+                    <img src="./images/elements/earth.jpg" alt="earth">
+                    <p>Earth: </p>
+                </div>
+
+                <div>
+                    <img src="./images/elements/fire.jpg" alt="fire">
+                    <p>Fire: Damage over time.</p>
+                </div>
+
+                <div>
+                    <img src="./images/elements/lightning.jpg" alt="lightning">
+                    <p>Lightning: </p>
+                </div>
+
+            </div>
+
+            <h2>Reactions</h2>
+
+            <div id="element-reactions">
+
+                <div>
+                    <img src="./images/elements/fire.jpg" alt="fire">
+                    <img src="./images/elements/water.jpg" alt="water">
+                    <p>Steam</p>
+                </div>
+
+                <div>
+                    <img src="./images/elements/fire.jpg" alt="fire">
+                    <img src="./images/elements/lightning.jpg" alt="lightning">
+                    <p>Confused</p>
+                </div>
+
+                <div>
+                    <img src="./images/elements/fire.jpg" alt="fire">
+                    <img src="./images/elements/earth.jpg" alt="earth">
+                    <p>Petrify</p>
+                </div>
+
+                <div>
+                    <img src="./images/elements/fire.jpg" alt="fire">
+                    <img src="./images/elements/wind.jpg" alt="wind">
+                    <p>Burn</p>
+                </div>
+
+                <div>
+                    <img src="./images/elements/water.jpg" alt="water">
+                    <img src="./images/elements/lightning.jpg" alt="lightning">
+                    <p>Stun</p>
+                </div>
+
+                <div>
+                    <img src="./images/elements/water.jpg" alt="water">
+                    <img src="./images/elements/earth.jpg" alt="earth">
+                    <p>Mud</p>
+                </div>
+
+                <div>
+                    <img src="./images/elements/water.jpg" alt="water">
+                    <img src="./images/elements/wind.jpg" alt="wind">
+                    <p>Freeze</p>
+                </div>
+
+                <div>
+                    <img src="./images/elements/earth.jpg" alt="earth">
+                    <img src="./images/elements/wind.jpg" alt="wind">
+                    <p>Knockdown</p>
+                </div>
+
+                <div>
+                    <img src="./images/elements/earth.jpg" alt="earth">
+                    <img src="./images/elements/lightning.jpg" alt="lightning">
+                    <p>Charge</p>
+                </div>
+
+                <div>
+                    <img src="./images/elements/wind.jpg" alt="wind">
+                    <img src="./images/elements/lightning.jpg" alt="lightning">
+                    <p>Airborne</p>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+
+
+    </script>
+
+    <script src="./scripts/index.js"></script>
+    
+</body>
+</html>
