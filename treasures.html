@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Wonderers Fansite</title>
+    <title>Treasures | Wonderers Fansite</title>
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/treasure.css">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 </head>
 <body>
@@ -79,35 +80,25 @@
 
     </div>
 
-    <div id="home-arrow">
-        <img src="./images/arrow.png" alt="arrow">
-    </div>
+    <div id="treasure-menu">
 
-    <div id="home">
+        <div id="treasure-menu-wrapper">
 
-        <img src="./images/logo.png" alt="logo">
+            <h1>Treasure Chest Locations</h1>
+
+            <img src="./images/world_map.jpg" alt="world_map" width="1920" height="1920">
+
+        </div>
 
     </div>
 
     <script>
 
-        function close_artifact_info(e, self){
-            e.stopPropagation()
-            self.parentElement.style.display = "none"
-        }
 
-        function open_artifact_info(e){
-
-            document.querySelectorAll(".artifact-wrapper").forEach(function(e){
-                e.style.display = "none"
-            })
-
-            e.children["artifact-info-wrapper"].style.display = "flex"
-        }
 
     </script>
 
     <script src="./scripts/index.js"></script>
-
+    
 </body>
 </html>
