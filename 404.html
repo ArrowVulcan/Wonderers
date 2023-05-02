@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | Wonderers Fansite</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
+    <style>
+
+        #btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 40px;
+            border-radius: 8px;
+            margin: 20px;
+            background-color: #3F51B5;
+            border: 2px solid #fff5;
+            padding: 25px;
+            font-weight: bold;
+        }
+
+        #btn:hover{
+            background-color: #2196f3;
+        }
+
+        #content{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #fof{
+            filter: drop-shadow(20px 25px 4px #000a);
+            margin: 20px;
+        }
+
+        h1{
+            font-size: 64px;
+        }
+
+        h2{
+            font-size: 24px;
+        }
+
+        @media screen and (max-width: 600px){
+
+            #fof{
+                width: 50vw;
+            }
+            
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <bg></bg>
+
+    <div id="content">
+
+        <img id="fof" src="./images/404.png" alt="404">
+
+        <h1>404</h1>
+
+        <h2>Page not found!</h2>
+
+        <a href="./">
+            <div id="btn">Go to Homepage</div>
+        </a>
+
+    </div>
+
+</body>
+</html>

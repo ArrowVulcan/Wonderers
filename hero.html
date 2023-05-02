@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buffs | Wonderers Fansite</title>
     <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/buffs.css">
+    <link rel="stylesheet" href="./styles/hero.css">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 </head>
 <body>
@@ -39,7 +39,7 @@
 
         <div id="menu-list">
 
-            <a href="./buffs">
+            <a href="./hero">
                 <div id="hero" class="menu-buttons">
                     <img src="./images/hero.png" alt="hero">
                     <p>Hero</p>
@@ -85,9 +85,9 @@
         <div id="buff-list">
 
             <div class="dropdown">
-                <button id="drop-down-button" class="dropbtn">Ali baba<i class="arrow down"></i></button>
+                <button id="drop-down-button" class="dropbtn">Ali Baba<i class="arrow down"></i></button>
                 <div class="dropdown-content">
-                    <div onclick="change_character(this, 'ali_baba')">Ali baba</div>
+                    <div onclick="change_character(this, 'ali_baba')">Ali Baba</div>
                     <div onclick="change_character(this, 'robin')">Robin</div>
                     <div onclick="change_character(this, 'oz')">Oz</div>
                     <div onclick="change_character(this, 'alice')">Alice</div>
@@ -100,6 +100,122 @@
             <div id="buff-list-wrapper">
 
                 <div id="ali_baba" class="character">
+
+                    <h2 class="titles">Skills</h2>
+
+                    <div id="ability-wrapper">
+
+                        <div class="abilities">
+                            <img src="./images/abilites/shadow_slash.png" alt="shadow_slash">
+                            <div>
+                                <h3>Shadow Slash</h3>
+                                <p>Slashes enemies in front, dealing damage equal to <span class="percent">200%</span> of <span class="type">Attack</span>. Ali Baba then gains <span class="skill">Stealth</span> for 8 sec.</p>
+                                <p><span class="skill">Stealth:</span> Ali Baba hides in the shadows, making enemies unable to see him. Stealth is dispelled upon receiving damage.</p>
+                            </div>
+                        </div>
+
+                        <div class="abilities">
+                            <img src="./images/abilites/thievery.png" alt="thievery">
+                            <div>
+                                <h3>Thievery</h3>
+                                <p>Upon obtaining Gold, gains <span class="type">Thievery</span> buff.</p>
+                                <p><span class="type">Thievery:</span> Increases Ali Baba's Speed by <span class="percent">2%</span>. (Max 5 stacks, duration 10 sec)</p>
+                            </div>
+                        </div>
+
+                        <div class="abilities">
+                            <img src="./images/abilites/flash_step.png" alt="flash_step">
+                            <div>
+                                <h3>Flash Step</h3>
+                                <p>Upon Evasion, increases Speed by <span class="percent">10%</span> for <span class="amount">2</span> sec. Using Evasion will not dispel <span class="skill">Stealth</span>.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h2 class="titles">Weapons</h2>
+
+                    <div id="weapon-wrapper">
+
+                        <div class="weapons">
+
+                            <h2 class="fire">Fire Element</h2>
+
+                            <img class="weapon-icon" src="./images/weapons/fire_dagger.jpg" alt="fire_dagger">
+
+                            <div class="weapon-skill">
+                                <img src="./images/weapons/oily_barbecue.png" alt="oily_barbecue">
+                                <h3>Oily Barbecue</h3>
+                            </div>
+                            
+                            <p class="weapon-description">Pours oil in front before setting enemies on fire, dealing damage equal to <span class="percent">280%</span> of <span class="type">Attack</span> and inflicting <span class="type">Fire Element State</span>.</p>
+
+                        </div>
+
+                        <div class="weapons">
+
+                            <h2 class="water">Water Element</h2>
+
+                            <img class="weapon-icon" src="./images/weapons/water_dagger.jpg" alt="water_dagger">
+
+                            <div class="weapon-skill">
+                                <img src="./images/weapons/heart_smite.png" alt="heart_smite">
+                                <h3>Heart Smite</h3>
+                            </div>
+                            
+                            <p class="weapon-description">Stabs enemies in front, dealing damage equal to <span class="percent">160%</span> of <span class="type">Attack</span> and inflicting <span class="type">Water Element State</span>. Each skill that hits enemies decreases Defense by <span class="amount">3</span> for 7 sec. (Max <span class="amount">5</span> stacks)</p>
+
+                        </div>
+
+                        <div class="weapons">
+
+                            <h2 class="earth">Earth Element</h2>
+
+                            <img class="weapon-icon" src="./images/weapons/earth_dagger.jpg" alt="earth_dagger">
+
+                            <div class="weapon-skill">
+                                <img src="./images/weapons/poisoned_dagger.png" alt="poisoned_dagger">
+                                <h3>Poisoned Dagger</h3>
+                            </div>
+                            
+                            <p class="weapon-description">Summons <span class="amount">5</span> poisoned daggers. The daggers automatically track nearby enemies, dealing damage equal to <span class="percent">65%</span> of <span class="type">Attack</span>, inflicting <span class="type">Earth Element State</span> and <span class="type">Poison</span>.</p>
+                            <p class="weapon-description"><span class="type">Poison:</span> Deals damage over time equal to <span class="percent">3%</span> of <span class="type">Attack</span> every <span class="duration">0.5 sec</span> for <span class="duration">5 sec</span>. (Max <span class="amount">10</span> stacks)</p>
+
+                        </div>
+
+                        <div class="weapons">
+
+                            <h2 class="lightning">Lightning Element</h2>
+
+                            <img class="weapon-icon" src="./images/weapons/lightning_dagger.jpg" alt="lightning_dagger">
+
+                            <div class="weapon-skill">
+                                <img src="./images/weapons/thrust_of_rage.png" alt="thrust_of_rage">
+                                <h3>Thrust of Rage</h3>
+                            </div>
+                            
+                            <p class="weapon-description">Rapidly stabs enemies in front 10 times, dealing damage equal to <span class="percent">50%</span> of <span class="type">Attack</span>, then throws a Lightning Dagger that additionally deals <span class="amount">2 times</span> as much damage. Inflicts <span class="type">Lightning Element State</span> on enemies that have taken damage.</p>
+
+                        </div>
+
+                        <div class="weapons">
+
+                            <h2 class="wind">Wind Element</h2>
+
+                            <img class="weapon-icon" src="./images/weapons/wind_dagger.jpg" alt="wind_dagger">
+
+                            <div class="weapon-skill">
+                                <img src="./images/weapons/cloud_slash.png" alt="cloud_slash">
+                                <h3>Cloud Slash</h3>
+                            </div>
+                            
+                            <p class="weapon-description">Attacks by spinning forward. Deals damage equal to <span class="percent">110%</span> of <span class="type">Attack</span> to nearby enemies 4 times, and inflicts <span class="type">Wind Element State</span>. When using this skill, increases <span class="type">Attack Speed</span> by <span class="percent">15%</span> for 5 sec.</p>
+
+                        </div>
+
+                    </div>
+
+                    <h2 class="titles">Abilities</h2>
 
                     <div class="buff">
 

@@ -377,6 +377,10 @@ button{
         margin-left: 10px;
     }
 
+    .menu-buttons{
+        margin: 10px;
+    }
+
     #home img{
         width: 80vw;
     }
