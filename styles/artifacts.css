@@ -163,4 +163,8 @@ square{
         width: 280px;
     }
 
+    .artifact-info-effect{
+        padding: 0px 0px;
+    }
+
 }
