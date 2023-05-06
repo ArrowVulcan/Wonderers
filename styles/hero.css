@@ -25,6 +25,11 @@
     border: 1px solid #FFFA;
     box-shadow: 0px 0px 2px 1px #000;
     display: flex;
+    background-image: url("../images/buffs/backplate.png");
+    background-repeat: no-repeat;
+    background-position-x: -5px;
+    background-position-y: -11px;
+    background-size: 40%;
 }
 
 .buff img{
@@ -196,6 +201,10 @@ select:hover, option:hover{
 }
 
 @media screen and (max-width: 600px){
+
+    .buff{
+        background-image: none;
+    }
 
     .buff, .character, .weapons{
         max-width: 98vw;
