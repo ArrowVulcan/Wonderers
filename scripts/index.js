@@ -9,7 +9,7 @@ function close_menu(e){
 
     setTimeout(() => {
         menu.style.display = "none"
-    }, fade_time);
+    }, fade_time)
 
 }
 
@@ -33,6 +33,20 @@ function open_menu(e, keep=false){
 
     setTimeout(() => {
         menu.style.opacity = 1
-    }, 1);
+    }, 1)
+
+}
+
+function move_to_top(){
+    window.scrollTo(0, 0)
+}
+
+window.onscroll = function(e){
+
+    if(window.scrollY >= 350){
+        document.getElementById("up-arrow").style.display = "block"
+    }else{
+        document.getElementById("up-arrow").style.display = "none"
+    }
 
 }

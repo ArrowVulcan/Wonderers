@@ -35,6 +35,9 @@
 .buff img{
     width: 168px;
     height: 168px;
+    outline: 4px solid #0004;
+    outline-offset: -1px;
+    border-radius: 50%;
 }
 
 #buff-info-wrapper{
@@ -79,6 +82,10 @@
     border-radius: 8px;
 }
 
+#robin, #snow, #oz, #odile, #alice, #scarlet{
+    display: none;
+}
+
 .titles{
     margin: 30px 10px 5px 15px;
 }
@@ -108,6 +115,19 @@
 .abilities img{
     width: 120px;
     height: 120px;
+    outline: 3px solid #FFF4;
+    outline-offset: 1px;
+    border-radius: 50%;
+}
+
+.abilities::before{
+    content: "";
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    border-radius: 50%;
+    outline: 1px solid #000;
+    outline-offset: -1px;
 }
 
 .fire{

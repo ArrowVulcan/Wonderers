@@ -4,9 +4,13 @@
     outline: 0;
     border: 0;
     box-sizing: border-box;
-    user-select: none;
-    -moz-user-select: none;
     -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+p, h1, h2, h3, h4{
+    text-shadow: 0px 0px 3px #000;
 }
 
 a{
@@ -71,8 +75,8 @@ bg{
 }
 
 .down{
-    transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .dropbtn{
@@ -250,6 +254,28 @@ button{
     transform: scale(1.05);
 }
 
+#up-arrow{
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    background-color: #465f7a;
+    padding: 6px 12px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px 0px #000a;
+    transition: transform 250ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    display: none;
+}
+
+#up-arrow:hover{
+    background-color: #59799b;
+    transform: scale(1.1);
+}
+
+#up-arrow img{
+    width: 20px;
+    height: 24px;
+}
+
 #pet-menu{
     width: 100vw;
     min-height: 100vh;
@@ -345,6 +371,21 @@ button{
     margin: 20px 0px;
 }
 
+.mouse-effect{
+    position: absolute;
+    animation: scale 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96) forwards;
+    z-index: 5000;
+}
+
+@keyframes scale{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
 .percent, .duration, .amount, .effect{
     color: #7dc2a1;
 }
@@ -383,6 +424,11 @@ button{
 
     #home img{
         width: 80vw;
+    }
+
+    #up-arrow{
+        right: 10px;
+        bottom: 10px;
     }
 
 }
