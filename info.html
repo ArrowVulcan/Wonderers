@@ -88,7 +88,9 @@
 
         <div id="info-menu-wrapper">
 
-            <h1>Elemental Reaction</h1>
+            <div class="menu-divider"></div>
+            <h1 class="info-title">Elemental Reaction</h1>
+            <div class="menu-divider"></div>
 
             <p>To make an Elemental Reaction, you will need to combine two elements on a monster.</p>
             <p>When two elements combine, it will create a new effect/debuff on the monster.</p>
@@ -97,27 +99,69 @@
             <div id="element-wrapper">
 
                 <div>
-                    <img src="./images/elements/water.jpg" alt="water">
+                    <svg viewBox="0 0 52 60" width="52" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+
+                            <pattern id="svg_water" patternUnits="userSpaceOnUse" width="52" height="60">
+                                <image href="./images/elements/water.jpg" width="52" height="60" />
+                            </pattern>
+
+                        </defs>
+                        <polygon points="27 2 49 16 49 44 26 57 3 44 3 16" fill="url(#svg_water)" stroke="#000A" />
+                    </svg>
+                    <!--<img src="./images/elements/water.jpg" alt="water">-->
                     <p>Water: Slows enemies.</p>
                 </div>
 
                 <div>
-                    <img src="./images/elements/wind.jpg" alt="wind">
+                    <svg viewBox="0 0 52 60" width="52" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="svg_wind" patternUnits="userSpaceOnUse" width="52" height="60">
+                                <image href="./images/elements/wind.jpg" width="52" height="60" />
+                            </pattern>
+                        </defs>
+                        <polygon points="27 2 49 16 49 44 26 57 3 44 3 16" fill="url(#svg_wind)" stroke="#000A" />
+                    </svg>
+                    <!--<img src="./images/elements/wind.jpg" alt="wind">-->
                     <p>Wind: </p>
                 </div>
                 
                 <div>
-                    <img src="./images/elements/earth.jpg" alt="earth">
+                    <svg viewBox="0 0 52 60" width="52" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="svg_earth" patternUnits="userSpaceOnUse" width="52" height="60">
+                                <image href="./images/elements/earth.jpg" width="52" height="60" />
+                            </pattern>
+                        </defs>
+                        <polygon points="27 2 49 16 49 44 26 57 3 44 3 16" fill="url(#svg_earth)" stroke="#000A" />
+                    </svg>
+                    <!--<img src="./images/elements/earth.jpg" alt="earth">-->
                     <p>Earth: </p>
                 </div>
 
                 <div>
-                    <img src="./images/elements/fire.jpg" alt="fire">
+                    <svg viewBox="0 0 52 60" width="52" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="svg_fire" patternUnits="userSpaceOnUse" width="52" height="60">
+                                <image href="./images/elements/fire.jpg" width="52" height="60" />
+                            </pattern>
+                        </defs>
+                        <polygon points="27 2 49 16 49 44 26 57 3 44 3 16" fill="url(#svg_fire)" stroke="#000A" />
+                    </svg>
+                    <!--<img src="./images/elements/fire.jpg" alt="fire">-->
                     <p>Fire: Damage over time.</p>
                 </div>
 
                 <div>
-                    <img src="./images/elements/lightning.jpg" alt="lightning">
+                    <svg viewBox="0 0 52 60" width="52" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="svg_lightning" patternUnits="userSpaceOnUse" width="52" height="60">
+                                <image href="./images/elements/lightning.jpg" width="52" height="60" />
+                            </pattern>
+                        </defs>
+                        <polygon points="27 2 49 16 49 44 26 57 3 44 3 16" fill="url(#svg_lightning)" stroke="#000A" />
+                    </svg>
+                    <!--<img src="./images/elements/lightning.jpg" alt="lightning">-->
                     <p>Lightning: </p>
                 </div>
 
@@ -128,65 +172,311 @@
             <div id="element-reactions">
 
                 <div>
-                    <img src="./images/elements/fire.jpg" alt="fire">
-                    <img src="./images/elements/water.jpg" alt="water">
+                    <svg viewBox="0 0 52 60" width="52" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="svg_fire" patternUnits="userSpaceOnUse" width="52" height="60">
+                                <image href="./images/elements/fire.jpg" width="52" height="60" />
+                            </pattern>
+                        </defs>
+                        <polygon points="27 2 49 16 49 44 26 57 3 44 3 16" fill="url(#svg_fire)" stroke="#000A" />
+                    </svg>
+                    <svg viewBox="0 0 52 60" width="52" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+
+                            <pattern id="svg_water" patternUnits="userSpaceOnUse" width="52" height="60">
+                                <image href="./images/elements/water.jpg" width="52" height="60" />
+                            </pattern>
+
+                        </defs>
+                        <polygon points="27 2 49 16 49 44 26 57 3 44 3 16" fill="url(#svg_water)" stroke="#000A" />
+                    </svg>
                     <p>Steam</p>
                 </div>
 
                 <div>
-                    <img src="./images/elements/fire.jpg" alt="fire">
-                    <img src="./images/elements/lightning.jpg" alt="lightning">
+                    <svg viewBox="0 0 52 60" width="52" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="svg_fire" patternUnits="userSpaceOnUse" width="52" height="60">
+                                <image href="./images/elements/fire.jpg" width="52" height="60" />
+                            </pattern>
+                        </defs>
+                        <polygon points="27 2 49 16 49 44 26 57 3 44 3 16" fill="url(#svg_fire)" stroke="#000A" />
+                    </svg>
+                    <svg viewBox="0 0 52 60" width="52" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="svg_lightning" patternUnits="userSpaceOnUse" width="52" height="60">
+                                <image href="./images/elements/lightning.jpg" width="52" height="60" />
+                            </pattern>
+                        </defs>
+                        <polygon points="27 2 49 16 49 44 26 57 3 44 3 16" fill="url(#svg_lightning)" stroke="#000A" />
+                    </svg>
                     <p>Confused</p>
                 </div>
 
                 <div>
-                    <img src="./images/elements/fire.jpg" alt="fire">
-                    <img src="./images/elements/earth.jpg" alt="earth">
+                    <svg viewBox="0 0 52 60" width="52" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="svg_fire" patternUnits="userSpaceOnUse" width="52" height="60">
+                                <image href="./images/elements/fire.jpg" width="52" height="60" />
+                            </pattern>
+                        </defs>
+                        <polygon points="27 2 49 16 49 44 26 57 3 44 3 16" fill="url(#svg_fire)" stroke="#000A" />
+                    </svg>
+                    <svg viewBox="0 0 52 60" width="52" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="svg_earth" patternUnits="userSpaceOnUse" width="52" height="60">
+                                <image href="./images/elements/earth.jpg" width="52" height="60" />
+                            </pattern>
+                        </defs>
+                        <polygon points="27 2 49 16 49 44 26 57 3 44 3 16" fill="url(#svg_earth)" stroke="#000A" />
+                    </svg>
                     <p>Petrify</p>
                 </div>
 
                 <div>
-                    <img src="./images/elements/fire.jpg" alt="fire">
-                    <img src="./images/elements/wind.jpg" alt="wind">
+                    <svg viewBox="0 0 52 60" width="52" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="svg_fire" patternUnits="userSpaceOnUse" width="52" height="60">
+                                <image href="./images/elements/fire.jpg" width="52" height="60" />
+                            </pattern>
+                        </defs>
+                        <polygon points="27 2 49 16 49 44 26 57 3 44 3 16" fill="url(#svg_fire)" stroke="#000A" />
+                    </svg>
+                    <svg viewBox="0 0 52 60" width="52" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="svg_wind" patternUnits="userSpaceOnUse" width="52" height="60">
+                                <image href="./images/elements/wind.jpg" width="52" height="60" />
+                            </pattern>
+                        </defs>
+                        <polygon points="27 2 49 16 49 44 26 57 3 44 3 16" fill="url(#svg_wind)" stroke="#000A" />
+                    </svg>
                     <p>Burn</p>
                 </div>
 
                 <div>
-                    <img src="./images/elements/water.jpg" alt="water">
-                    <img src="./images/elements/lightning.jpg" alt="lightning">
+                    <svg viewBox="0 0 52 60" width="52" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+
+                            <pattern id="svg_water" patternUnits="userSpaceOnUse" width="52" height="60">
+                                <image href="./images/elements/water.jpg" width="52" height="60" />
+                            </pattern>
+
+                        </defs>
+                        <polygon points="27 2 49 16 49 44 26 57 3 44 3 16" fill="url(#svg_water)" stroke="#000A" />
+                    </svg>
+                    <svg viewBox="0 0 52 60" width="52" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="svg_lightning" patternUnits="userSpaceOnUse" width="52" height="60">
+                                <image href="./images/elements/lightning.jpg" width="52" height="60" />
+                            </pattern>
+                        </defs>
+                        <polygon points="27 2 49 16 49 44 26 57 3 44 3 16" fill="url(#svg_lightning)" stroke="#000A" />
+                    </svg>
                     <p>Stun</p>
                 </div>
 
                 <div>
-                    <img src="./images/elements/water.jpg" alt="water">
-                    <img src="./images/elements/earth.jpg" alt="earth">
+                    <svg viewBox="0 0 52 60" width="52" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+
+                            <pattern id="svg_water" patternUnits="userSpaceOnUse" width="52" height="60">
+                                <image href="./images/elements/water.jpg" width="52" height="60" />
+                            </pattern>
+
+                        </defs>
+                        <polygon points="27 2 49 16 49 44 26 57 3 44 3 16" fill="url(#svg_water)" stroke="#000A" />
+                    </svg>
+                    <svg viewBox="0 0 52 60" width="52" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="svg_earth" patternUnits="userSpaceOnUse" width="52" height="60">
+                                <image href="./images/elements/earth.jpg" width="52" height="60" />
+                            </pattern>
+                        </defs>
+                        <polygon points="27 2 49 16 49 44 26 57 3 44 3 16" fill="url(#svg_earth)" stroke="#000A" />
+                    </svg>
                     <p>Mud</p>
                 </div>
 
                 <div>
-                    <img src="./images/elements/water.jpg" alt="water">
-                    <img src="./images/elements/wind.jpg" alt="wind">
+                    <svg viewBox="0 0 52 60" width="52" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+
+                            <pattern id="svg_water" patternUnits="userSpaceOnUse" width="52" height="60">
+                                <image href="./images/elements/water.jpg" width="52" height="60" />
+                            </pattern>
+
+                        </defs>
+                        <polygon points="27 2 49 16 49 44 26 57 3 44 3 16" fill="url(#svg_water)" stroke="#000A" />
+                    </svg>
+                    <svg viewBox="0 0 52 60" width="52" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="svg_wind" patternUnits="userSpaceOnUse" width="52" height="60">
+                                <image href="./images/elements/wind.jpg" width="52" height="60" />
+                            </pattern>
+                        </defs>
+                        <polygon points="27 2 49 16 49 44 26 57 3 44 3 16" fill="url(#svg_wind)" stroke="#000A" />
+                    </svg>
                     <p>Freeze</p>
                 </div>
 
                 <div>
-                    <img src="./images/elements/earth.jpg" alt="earth">
-                    <img src="./images/elements/wind.jpg" alt="wind">
+                    <svg viewBox="0 0 52 60" width="52" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="svg_earth" patternUnits="userSpaceOnUse" width="52" height="60">
+                                <image href="./images/elements/earth.jpg" width="52" height="60" />
+                            </pattern>
+                        </defs>
+                        <polygon points="27 2 49 16 49 44 26 57 3 44 3 16" fill="url(#svg_earth)" stroke="#000A" />
+                    </svg>
+                    <svg viewBox="0 0 52 60" width="52" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="svg_wind" patternUnits="userSpaceOnUse" width="52" height="60">
+                                <image href="./images/elements/wind.jpg" width="52" height="60" />
+                            </pattern>
+                        </defs>
+                        <polygon points="27 2 49 16 49 44 26 57 3 44 3 16" fill="url(#svg_wind)" stroke="#000A" />
+                    </svg>
                     <p>Knockdown</p>
                 </div>
 
                 <div>
-                    <img src="./images/elements/earth.jpg" alt="earth">
-                    <img src="./images/elements/lightning.jpg" alt="lightning">
+                    <svg viewBox="0 0 52 60" width="52" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="svg_earth" patternUnits="userSpaceOnUse" width="52" height="60">
+                                <image href="./images/elements/earth.jpg" width="52" height="60" />
+                            </pattern>
+                        </defs>
+                        <polygon points="27 2 49 16 49 44 26 57 3 44 3 16" fill="url(#svg_earth)" stroke="#000A" />
+                    </svg>
+                    <svg viewBox="0 0 52 60" width="52" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="svg_lightning" patternUnits="userSpaceOnUse" width="52" height="60">
+                                <image href="./images/elements/lightning.jpg" width="52" height="60" />
+                            </pattern>
+                        </defs>
+                        <polygon points="27 2 49 16 49 44 26 57 3 44 3 16" fill="url(#svg_lightning)" stroke="#000A" />
+                    </svg>
                     <p>Charge</p>
                 </div>
 
                 <div>
-                    <img src="./images/elements/wind.jpg" alt="wind">
-                    <img src="./images/elements/lightning.jpg" alt="lightning">
+                    <svg viewBox="0 0 52 60" width="52" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="svg_wind" patternUnits="userSpaceOnUse" width="52" height="60">
+                                <image href="./images/elements/wind.jpg" width="52" height="60" />
+                            </pattern>
+                        </defs>
+                        <polygon points="27 2 49 16 49 44 26 57 3 44 3 16" fill="url(#svg_wind)" stroke="#000A" />
+                    </svg>
+                    <svg viewBox="0 0 52 60" width="52" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="svg_lightning" patternUnits="userSpaceOnUse" width="52" height="60">
+                                <image href="./images/elements/lightning.jpg" width="52" height="60" />
+                            </pattern>
+                        </defs>
+                        <polygon points="27 2 49 16 49 44 26 57 3 44 3 16" fill="url(#svg_lightning)" stroke="#000A" />
+                    </svg>
                     <p>Airborne</p>
                 </div>
                 
+            </div>
+
+            <div class="menu-divider"></div>
+            <h1 class="info-title">Titles</h1>
+            <div class="menu-divider"></div>
+
+            <div id="title-wrapper">
+                <img src="./images/titles/maven.png" alt="maven">
+                <img src="./images/titles/master.png" alt="master">
+                <img src="./images/titles/trainee.png" alt="trainee">
+                <img src="./images/titles/apprentice.png" alt="apprentice">
+                <img src="./images/titles/scrooge.png" alt="scrooge">
+                <img src="./images/titles/justice.png" alt="justice">
+                <img src="./images/titles/red_riding_hood.png" alt="red_riding_hood">
+                <img src="./images/titles/mage.png" alt="mage">
+            </div>
+
+            <div class="menu-divider"></div>
+            <h1 class="info-title">Dungeon Rewards</h1>
+            <div class="menu-divider"></div>
+
+            <h2 class="dungeon-titles">Hunter's Forest</h2>
+            <h4>Obtainable Rewards</h4>
+            <div class="rewards">
+                <img src="./images/items/coin.jpg" alt="coin">
+                <img src="./images/artifacts/rune_of_power.jpg" alt="rune_of_power">
+                <img src="./images/artifacts/sharp_blade.jpg" alt="sharp_blade">
+                <img src="./images/artifacts/red_dagger.jpg" alt="red_dagger">
+                <img src="./images/artifacts/flame_orb.jpg" alt="flame_orb">
+                <img src="./images/artifacts/fire_dragons_bandolier.jpg" alt="fire_dragons_bandolier">
+                <img src="./images/artifacts/mysterious_stone.jpg" alt="mysterious_stone">
+                <img src="./images/items/box.jpg" alt="box">
+            </div>
+            
+            <h4>Restoration Rewards</h4>
+            <div class="rewards">
+                <img src="./images/items/stone.jpg" alt="stone">
+                <img src="./images/items/sulfur.jpg" alt="sulfur">
+                <img src="./images/items/iron.jpg" alt="iron">
+                <img src="./images/items/coal.jpg" alt="coal">
+                <img src="./images/items/plant.jpg" alt="plant">
+                <img src="./images/items/juice.jpg" alt="juice">
+            </div>
+
+            <h4>Unlockable Character(s)</h4>
+            <img class="unlockable-characters" src="./images/heroes/robin_face.png" alt="robin">
+            <img class="unlockable-characters" src="./images/heroes/scarlet_face.png" alt="scarlet">
+
+            <br>
+            <br>
+
+            <h2 class="dungeon-titles">Frozen Castle</h2>
+            <h4>Obtainable Rewards</h4>
+            <div class="rewards">
+                <img src="./images/items/coin.jpg" alt="coin">
+                <img src="./images/artifacts/ordinary_shoes.jpg" alt="ordinary_shoes">
+                <img src="./images/artifacts/cut_hair.jpg" alt="cut_hair">
+                <img src="./images/artifacts/thick_mask.jpg" alt="thick_mask">
+                <img src="./images/artifacts/toad_tongue.jpg" alt="toad_tongue">
+                <img src="./images/artifacts/alchemy_book.jpg" alt="alchemy_book">
+                <img src="./images/artifacts/obsidian_lightning_rod.jpg" alt="obsidian_lightning_rod">
+                <img src="./images/items/box.jpg" alt="box">
+            </div>
+
+            <h4>Restoration Rewards</h4>
+            <div class="rewards">
+                <img src="./images/items/vegetables.jpg" alt="vegetables">
+                <img src="./images/items/raspberry.jpg" alt="raspberry">
+                <img src="./images/items/sugar.jpg" alt="sugar">
+                <img src="./images/items/flour.jpg" alt="flour">
+                <img src="./images/items/hay.jpg" alt="hay">
+                <img src="./images/items/grass.jpg" alt="grass">
+            </div>
+
+            <br>
+            <br>
+
+            <h2 class="dungeon-titles">Queen of Heart's Castle</h2>
+            <h4>Obtainable Rewards</h4>
+            <div class="rewards">
+                <img src="./images/items/coin.jpg" alt="coin">
+                <img src="./images/artifacts/wheeled_shoes.jpg" alt="wheeled_shoes">
+                <img src="./images/artifacts/superalloy_w.jpg" alt="superalloy_w">
+                <img src="./images/artifacts/ideal_innovation_mask.jpg" alt="ideal_innovation_mask">
+                <img src="./images/artifacts/symbol_of_game_day.jpg" alt="symbol_of_game_day">
+                <img src="./images/artifacts/shattered_cube_fragment.jpg" alt="shattered_cube_fragment">
+                <img src="./images/artifacts/great_mages_staff.jpg" alt="great_mages_staff">
+                <img src="./images/items/box.jpg" alt="box">
+            </div>
+
+            <h4>Restoration Rewards</h4>
+            <div class="rewards">
+                <img src="./images/items/wood.jpg" alt="wood">
+                <img src="./images/items/nuts.jpg" alt="nuts">
+                <img src="./images/items/fire_wood.jpg" alt="fire_wood">
+                <img src="./images/items/cotton.jpg" alt="cotton">
+                <img src="./images/items/egg.jpg" alt="egg">
+                <img src="./images/items/milk.jpg" alt="milk">
             </div>
 
         </div>

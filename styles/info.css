@@ -36,3 +36,30 @@
 h1, h2, h3, h4{
     margin: 20px 0px;
 }
+
+.dungeon-titles{
+    color: #fce86f;
+}
+
+#title-wrapper{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info-title{
+    text-align: center;
+}
+
+.rewards img{
+    width: 60px;
+    height: 60px;
+}
+
+.unlockable-characters{
+    border-radius: 50%;
+    outline: 3px solid #FFF4;
+    outline-offset: 1px;
+    margin: 0px 4px;
+}
